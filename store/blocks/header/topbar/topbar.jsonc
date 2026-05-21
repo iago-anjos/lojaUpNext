@@ -1,0 +1,31 @@
+{
+  "flex-layout.row#topbar": {
+    "props": {
+      "blockClass": "wrapper__topbar",
+      "fullWidth": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#link-whatsapp",
+      "rich-text#link-oferta"
+    ]
+  },
+  "rich-text#link-whatsapp": {
+    "props": {
+      "blockClass": [
+        "text__topbar",
+        "whatsapp__topbar"
+      ],
+      "text": "![whatsapp](assets/images/icon-whatsapp.svg)atendimento (41)9999-9999"
+    }
+  },
+  "rich-text#link-oferta": {
+    "props": {
+      "blockClass": [
+        "text__topbar",
+        "oferta__topbar"
+      ],
+      "text": "![whatsapp](assets/images/icon-whatsapp.svg)atendimento (41)9999-9999"
+    }
+  }
+}
