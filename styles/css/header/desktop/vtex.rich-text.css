@@ -1,0 +1,46 @@
+.container--text__topbar {
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.paragraph--text__topbar {
+  color: #fff;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 121.186%;
+  margin: 0;
+}
+
+.image--text__topbar {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.image--oferta__topbar {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.container--oferta__topbar {
+  height: 36px;
+  background: #ffdd55;
+  border-radius: 20px 0 0 20px;
+  justify-content: flex-end;
+  padding: 0 20px 0 12px;
+}
+
+.paragraph--oferta__topbar {
+  margin: 0;
+}
+
+.link--oferta__topbar {
+  text-decoration: none;
+  color: #591032;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}

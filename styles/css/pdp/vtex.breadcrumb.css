@@ -1,0 +1,24 @@
+.link {
+  color: #787878;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #591032;
+  text-decoration: none;
+}
+
+.arrow {
+  color: #787878;
+  margin: 0 4px;
+}
+
+.term {
+  color: #2c2d30;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}

@@ -7,10 +7,9 @@
       "marginBottom": 4
     },
     "children": [
-      "product-selling-price"
+      "product-selling-price#pdp"
     ]
   },
-
   "flex-layout.row#list-price-savings": {
     "props": {
       "colGap": 2,
@@ -20,8 +19,24 @@
       "marginTop": 5
     },
     "children": [
-      "product-list-price",
-      "product-price-savings"
+      "product-list-price#pdp",
+      "product-price-savings#pdp"
     ]
+  },
+  "product-selling-price#pdp": {
+    "props": {
+      "blockClass": "pdp"
+    }
+  },
+  "product-list-price#pdp": {
+    "props": {
+      "blockClass": "pdp"
+    }
+  },
+  "product-price-savings#pdp": {
+    "props": {
+      "blockClass": "pdp",
+      "message": "{savingsPercentage}"
+    }
   }
 }

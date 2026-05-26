@@ -1,0 +1,215 @@
+{
+  "flex-layout.row#shelf-title-feminino": {
+    "props": {
+      "blockClass": "shelf-title",
+      "fullWidth": true
+    },
+    "children": ["rich-text#shelf-title-feminino"]
+  },
+  "rich-text#shelf-title-feminino": {
+    "props": {
+      "text": "Feminino",
+      "blockClass": "shelf-title"
+    }
+  },
+  "flex-layout.row#shelf-title-infantil": {
+    "props": {
+      "blockClass": "shelf-title",
+      "fullWidth": true
+    },
+    "children": ["rich-text#shelf-title-infantil"]
+  },
+  "rich-text#shelf-title-infantil": {
+    "props": {
+      "text": "Infantil",
+      "blockClass": "shelf-title"
+    }
+  },
+  "flex-layout.row#shelf-title-acessorio": {
+    "props": {
+      "blockClass": "shelf-title",
+      "fullWidth": true
+    },
+    "children": ["rich-text#shelf-title-acessorio"]
+  },
+  "rich-text#shelf-title-acessorio": {
+    "props": {
+      "text": "Acessórios",
+      "blockClass": "shelf-title"
+    }
+  },
+  "flex-layout.row#shelf-feminino": {
+    "props": {
+      "blockClass": "shelf",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#banner__shelf-feminino",
+      "flex-layout.col#products__shelf-feminino"
+    ]
+  },
+  "flex-layout.col#banner__shelf-feminino": {
+    "props": {
+      "blockClass": "banner__shelf",
+      "width": 0
+    },
+    "children": [
+      "image#banner-shelf-feminino"
+    ]
+  },
+  "image#banner-shelf-feminino": {
+    "props": {
+      "src": "assets/images/banner-feminino.png",
+      "alt": "Feminino",
+      "blockClass": "banner__shelf"
+    }
+  },
+  "flex-layout.col#products__shelf-feminino": {
+    "props": {
+      "blockClass": "products__shelf",
+      "width": "grow"
+    },
+    "children": [
+      "list-context.product-list#shelf-feminino"
+    ]
+  },
+  "list-context.product-list#shelf-feminino": {
+    "blocks": [
+      "product-summary.shelf#upnext"
+    ],
+    "children": [
+      "slider-layout#shelf-feminino"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelf-feminino": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#shelf-infantil": {
+    "props": {
+      "blockClass": "shelf",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#banner__shelf-infantil",
+      "flex-layout.col#products__shelf-infantil"
+    ]
+  },
+  "flex-layout.col#banner__shelf-infantil": {
+    "props": {
+      "blockClass": "banner__shelf",
+      "width": 0
+    },
+    "children": [
+      "image#banner-shelf-infantil"
+    ]
+  },
+  "image#banner-shelf-infantil": {
+    "props": {
+      "src": "assets/images/banner-infantil.png",
+      "alt": "Infantil",
+      "blockClass": "banner__shelf"
+    }
+  },
+  "flex-layout.col#products__shelf-infantil": {
+    "props": {
+      "blockClass": "products__shelf",
+      "width": "grow"
+    },
+    "children": [
+      "list-context.product-list#shelf-infantil"
+    ]
+  },
+  "list-context.product-list#shelf-infantil": {
+    "blocks": [
+      "product-summary.shelf#upnext"
+    ],
+    "children": [
+      "slider-layout#shelf-infantil"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelf-infantil": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#shelf-acessorio": {
+    "props": {
+      "blockClass": "shelf",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#banner__shelf-acessorio",
+      "flex-layout.col#products__shelf-acessorio"
+    ]
+  },
+  "flex-layout.col#banner__shelf-acessorio": {
+    "props": {
+      "blockClass": "banner__shelf",
+      "width": 0
+    },
+    "children": [
+      "image#banner-shelf-acessorio"
+    ]
+  },
+  "image#banner-shelf-acessorio": {
+    "props": {
+      "src": "assets/images/banner-acessorio.png",
+      "alt": "Acessórios",
+      "blockClass": "banner__shelf"
+    }
+  },
+  "flex-layout.col#products__shelf-acessorio": {
+    "props": {
+      "blockClass": "products__shelf",
+      "width": "grow"
+    },
+    "children": [
+      "list-context.product-list#shelf-acessorio"
+    ]
+  },
+  "list-context.product-list#shelf-acessorio": {
+    "blocks": [
+      "product-summary.shelf#upnext"
+    ],
+    "children": [
+      "slider-layout#shelf-acessorio"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelf-acessorio": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+}

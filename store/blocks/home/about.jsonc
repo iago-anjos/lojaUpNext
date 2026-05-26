@@ -1,0 +1,54 @@
+{
+  "flex-layout.row#about": {
+    "props": {
+      "blockClass": "about",
+      "fullWidth": false,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#model__about",
+      "flex-layout.col#content__about"
+    ]
+  },
+  "flex-layout.col#model__about": {
+    "props": {
+      "blockClass": "model__about",
+      "preventVerticalStretch": true,
+      "verticalAlign": "top"
+    },
+    "children": [
+      "image#model__about"
+    ]
+  },
+  "image#model__about": {
+    "props": {
+      "src": "assets/images/model-aboutUs.png",
+      "blockClass": "model__about",
+      "maxWidth": "100%"
+    }
+  },
+  "flex-layout.col#content__about": {
+    "props": {
+      "blockClass": "content__about",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#logo__about",
+      "rich-text#text__about"
+    ]
+  },
+  "image#logo__about": {
+    "props": {
+      "src": "assets/images/logo-upnext-digital-commerce.png",
+      "blockClass": "logo__about",
+      "maxWidth": "100%"
+    }
+  },
+  "rich-text#text__about": {
+    "props": {
+      "text": "Somos uma equipe de profissionais focados em inovação e atuantes no mercado de ecommerce. Especialistas em design, programação, marketing e gestão de ecommerce. \n Nosso carro-chefe é o desenvolvimento de ferramentas para ecommerce, com objetivos de aumentar tícket médio, fidelizar clientes, aumentar taxa de recompra, melhorar usabilidade, persuadir clientes, entre outras ações. \n Nossa missão é o comprometimento com os objetivos e metas a serem alcançados, sempre junto ao nosso cliente.",
+      "blockClass": "text__about"
+    }
+  }
+}

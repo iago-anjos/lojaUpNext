@@ -1,0 +1,93 @@
+/* MAIN */
+.flexRow--main__footer {
+  background: #eee !important;
+}
+
+.flexRow--contact__atendimento__footer {
+  margin-bottom: 18px !important;
+}
+
+.flexRowContent--main__footer {
+  max-width: 1440px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 18px 20px 8px !important;
+  box-sizing: border-box !important;
+  align-items: flex-start !important;
+  gap: 40px !important;
+}
+
+/* SOCIAL ICONS ROW */
+.flexRowContent--icons__social__footer {
+  flex-wrap: wrap !important;
+}
+
+/* CONTACT ROWS */
+.flexRowContent--contact__atendimento__footer {
+  gap: 2px !important;
+  align-items: center !important;
+}
+
+/* SELOS TOP ROW */
+.flexRowContent--top__selos__footer {
+  gap: 16px !important;
+  align-items: center !important;
+  margin-bottom: 16px !important;
+}
+
+/* PAYMENT */
+.flexRow--payment__footer {
+  background: #eee !important;
+  border-top: 1px solid #cdcdcd !important;
+}
+
+.flexRowContent--payment__footer {
+  max-width: 1440px !important;
+  margin: 0 auto !important;
+  padding: 8px 80px !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+/* COPYRIGHT */
+.flexRow--copyright__footer {
+  background: #eee !important;
+}
+
+.flexRowContent--copyright__footer
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+  position: absolute !important;
+  right: 0 !important;
+}
+
+/* ícone de atendimento ocupa só o necessário */
+.flexRowContent--contact__atendimento__footer
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  flex: 0 0 auto !important;
+  width: auto !important;
+}
+
+.flexRowContent--payment__footer
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  flex: 0 0 auto !important;
+  width: auto !important;
+}
+
+.flexRowContent--copyright__footer
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+  position: absolute !important;
+  right: 80px !important;
+  width: auto !important;
+}
+
+.flexRowContent--copyright__footer
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  flex: 1 !important;
+  width: auto !important;
+}
+
+.flexRowContent--copyright__footer
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  flex: 1 !important;
+  width: auto !important;
+}

@@ -1,0 +1,41 @@
+/* Selling price */
+.sellingPriceValue--pdp {
+  color: #591032;
+  font-family: "Istok Web", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* List price */
+.listPriceValue--pdp {
+  color: #787878;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+/* Savings badge */
+.savings--pdp {
+  background: #1faf38;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+/* Installments */
+.installments--pdp {
+  color: #787878;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}

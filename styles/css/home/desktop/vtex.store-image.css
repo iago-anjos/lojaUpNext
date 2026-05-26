@@ -1,0 +1,12 @@
+.imageContainer--img__banners-offer,
+.imageContainer--img__banners-season {
+  width: 100%;
+  line-height: 0;
+}
+
+.imageElement--img__banners-offer,
+.imageElement--img__banners-season {
+  width: 100%;
+  height: auto;
+  display: block;
+}

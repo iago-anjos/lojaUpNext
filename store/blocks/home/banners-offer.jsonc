@@ -1,0 +1,52 @@
+{
+  "flex-layout.row#banners-offer": {
+    "props": {
+      "blockClass": "banners-offer",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#banner-30off",
+      "flex-layout.col#banner-25off"
+    ]
+  },
+
+  "flex-layout.col#banner-30off": {
+    "props": { "blockClass": "item__banners-offer" },
+    "children": ["vtex.store-link:link#banner-30off"]
+  },
+  "vtex.store-link:link#banner-30off": {
+    "props": {
+      "href": "/30-off",
+      "blockClass": "link__banners-offer"
+    },
+    "children": ["image#banner-30off"]
+  },
+  "image#banner-30off": {
+    "props": {
+      "src": "assets/images/banner-30off.png",
+      "alt": "30% OFF - Conferir",
+      "maxWidth": "100%",
+      "blockClass": "img__banners-offer"
+    }
+  },
+
+  "flex-layout.col#banner-25off": {
+    "props": { "blockClass": "item__banners-offer" },
+    "children": ["vtex.store-link:link#banner-25off"]
+  },
+  "vtex.store-link:link#banner-25off": {
+    "props": {
+      "href": "/25-off",
+      "blockClass": "link__banners-offer"
+    },
+    "children": ["image#banner-25off"]
+  },
+  "image#banner-25off": {
+    "props": {
+      "src": "assets/images/banner-25off.png",
+      "alt": "25% OFF - Conferir",
+      "maxWidth": "100%",
+      "blockClass": "img__banners-offer"
+    }
+  }
+}

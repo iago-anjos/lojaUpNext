@@ -1,0 +1,554 @@
+{
+  "flex-layout.row#navbar-main": {
+    "props": {
+      "blockClass": "main__navbar",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-col__navbar",
+      "flex-layout.col#search-col__navbar",
+      "flex-layout.col#actions-col__navbar"
+    ]
+  },
+
+  "flex-layout.col#logo-col__navbar": {
+    "props": {
+      "blockClass": "logo-col__navbar"
+    },
+    "children": ["logo#navbar"]
+  },
+
+  "flex-layout.col#search-col__navbar": {
+    "props": {
+      "blockClass": "search-col__navbar"
+    },
+    "children": ["search-bar"]
+  },
+
+  "search-bar": {
+    "props": {
+      "placeholder": "O que deseja?"
+    }
+  },
+
+  "flex-layout.col#actions-col__navbar": {
+    "props": {
+      "blockClass": "actions-col__navbar"
+    },
+    "children": ["login#navbar", "minicart.v2#navbar"]
+  },
+
+  "login#navbar": {
+    "props": {
+      "iconSize": 24,
+      "iconLabel": "Faça seu Login"
+    }
+  },
+
+  "minicart.v2#navbar": {
+    "props": {
+      "minicartIconLabel": "Minha Sacola",
+      "quantityDisplayPosition": "right"
+    },
+    "children": ["minicart-base-content"]
+  },
+
+  "logo#navbar": {
+    "props": {
+      "title": "UpNext",
+      "href": "/",
+      "url": "assets/images/logo-upnext.png",
+      "width": "169",
+      "height": "51",
+      "blockClass": "navbar"
+    }
+  },
+
+  "flex-layout.row#navbar-menu": {
+    "props": {
+      "blockClass": "menu__navbar",
+      "fullWidth": true
+    },
+    "children": ["vtex.menu@2.x:menu#main-menu"]
+  },
+
+  "vtex.menu@2.x:menu#main-menu": {
+    "props": {
+      "orientation": "horizontal"
+    },
+    "children": [
+      "menu-item#beleza",
+      "menu-item#mindset",
+      "menu-item#calcados",
+      "menu-item#esportivo",
+      "menu-item#eletronicos",
+      "menu-item#jeans"
+    ]
+  },
+
+  // ─── BELEZA ───────────────────────────────────────────────
+  "menu-item#beleza": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/beleza",
+        "text": "Beleza"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#beleza"]
+  },
+  "vtex.menu@2.x:submenu#beleza": {
+    "props": { "width": "auto" },
+    "children": ["vtex.menu@2.x:menu#beleza"]
+  },
+  "vtex.menu@2.x:menu#beleza": {
+    "props": { "orientation": "vertical" },
+    "children": [
+      "menu-item#beleza-novidades",
+      "menu-item#beleza-feminino",
+      "menu-item#beleza-masculino",
+      "menu-item#beleza-menino",
+      "menu-item#beleza-menina",
+      "menu-item#beleza-marcas",
+      "menu-item#beleza-ofertas",
+      "menu-item#beleza-conferir-tudo"
+    ]
+  },
+  "menu-item#beleza-novidades": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/beleza/novidades", "text": "Novidades" }
+    }
+  },
+  "menu-item#beleza-feminino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/beleza/feminino", "text": "Feminino" }
+    }
+  },
+  "menu-item#beleza-masculino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/beleza/masculino", "text": "Masculino" }
+    }
+  },
+  "menu-item#beleza-menino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/beleza/menino", "text": "Menino" }
+    }
+  },
+  "menu-item#beleza-menina": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/beleza/menina", "text": "Menina" }
+    }
+  },
+  "menu-item#beleza-marcas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/beleza/marcas", "text": "Marcas" }
+    }
+  },
+  "menu-item#beleza-ofertas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/beleza/ofertas", "text": "Ofertas" }
+    }
+  },
+  "menu-item#beleza-conferir-tudo": {
+    "props": {
+      "type": "custom",
+      "blockClass": "conferir-tudo",
+      "itemProps": { "type": "internal", "href": "/beleza", "text": "conferir tudo" }
+    }
+  },
+
+  // ─── MINDSET ──────────────────────────────────────────────
+  "menu-item#mindset": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mindset",
+        "text": "Mindset"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#mindset"]
+  },
+  "vtex.menu@2.x:submenu#mindset": {
+    "props": { "width": "auto" },
+    "children": ["vtex.menu@2.x:menu#mindset"]
+  },
+  "vtex.menu@2.x:menu#mindset": {
+    "props": { "orientation": "vertical" },
+    "children": [
+      "menu-item#mindset-novidades",
+      "menu-item#mindset-masculino",
+      "menu-item#mindset-feminino",
+      "menu-item#mindset-acessorios",
+      "menu-item#mindset-marcas",
+      "menu-item#mindset-ofertas",
+      "menu-item#mindset-conferir-tudo"
+    ]
+  },
+  "menu-item#mindset-novidades": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/mindset/novidades", "text": "Novidades" }
+    }
+  },
+  "menu-item#mindset-masculino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/mindset/masculino", "text": "Masculino" }
+    }
+  },
+  "menu-item#mindset-feminino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/mindset/feminino", "text": "Feminino" }
+    }
+  },
+  "menu-item#mindset-acessorios": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/mindset/acessorios", "text": "Acessórios" }
+    }
+  },
+  "menu-item#mindset-marcas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/mindset/marcas", "text": "Marcas" }
+    }
+  },
+  "menu-item#mindset-ofertas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/mindset/ofertas", "text": "Ofertas" }
+    }
+  },
+  "menu-item#mindset-conferir-tudo": {
+    "props": {
+      "type": "custom",
+      "blockClass": "conferir-tudo",
+      "itemProps": { "type": "internal", "href": "/mindset", "text": "conferir tudo" }
+    }
+  },
+
+  // ─── CALÇADOS ─────────────────────────────────────────────
+  "menu-item#calcados": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/calcados",
+        "text": "Calçados"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#calcados"]
+  },
+  "vtex.menu@2.x:submenu#calcados": {
+    "props": { "width": "auto" },
+    "children": ["vtex.menu@2.x:menu#calcados"]
+  },
+  "vtex.menu@2.x:menu#calcados": {
+    "props": { "orientation": "vertical" },
+    "children": [
+      "menu-item#calcados-novidades",
+      "menu-item#calcados-masculino",
+      "menu-item#calcados-feminino",
+      "menu-item#calcados-infantil",
+      "menu-item#calcados-esportivo",
+      "menu-item#calcados-marcas",
+      "menu-item#calcados-ofertas",
+      "menu-item#calcados-conferir-tudo"
+    ]
+  },
+  "menu-item#calcados-novidades": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/calcados/novidades", "text": "Novidades" }
+    }
+  },
+  "menu-item#calcados-masculino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/calcados/masculino", "text": "Masculino" }
+    }
+  },
+  "menu-item#calcados-feminino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/calcados/feminino", "text": "Feminino" }
+    }
+  },
+  "menu-item#calcados-infantil": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/calcados/infantil", "text": "Infantil" }
+    }
+  },
+  "menu-item#calcados-esportivo": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/calcados/esportivo", "text": "Esportivo" }
+    }
+  },
+  "menu-item#calcados-marcas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/calcados/marcas", "text": "Marcas" }
+    }
+  },
+  "menu-item#calcados-ofertas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/calcados/ofertas", "text": "Ofertas" }
+    }
+  },
+  "menu-item#calcados-conferir-tudo": {
+    "props": {
+      "type": "custom",
+      "blockClass": "conferir-tudo",
+      "itemProps": { "type": "internal", "href": "/calcados", "text": "conferir tudo" }
+    }
+  },
+
+  // ─── ESPORTIVO ────────────────────────────────────────────
+  "menu-item#esportivo": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/esportivo",
+        "text": "Esportivo"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#esportivo"]
+  },
+  "vtex.menu@2.x:submenu#esportivo": {
+    "props": { "width": "auto" },
+    "children": ["vtex.menu@2.x:menu#esportivo"]
+  },
+  "vtex.menu@2.x:menu#esportivo": {
+    "props": { "orientation": "vertical" },
+    "children": [
+      "menu-item#esportivo-novidades",
+      "menu-item#esportivo-masculino",
+      "menu-item#esportivo-feminino",
+      "menu-item#esportivo-infantil",
+      "menu-item#esportivo-acessorios",
+      "menu-item#esportivo-marcas",
+      "menu-item#esportivo-ofertas",
+      "menu-item#esportivo-conferir-tudo"
+    ]
+  },
+  "menu-item#esportivo-novidades": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/esportivo/novidades", "text": "Novidades" }
+    }
+  },
+  "menu-item#esportivo-masculino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/esportivo/masculino", "text": "Masculino" }
+    }
+  },
+  "menu-item#esportivo-feminino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/esportivo/feminino", "text": "Feminino" }
+    }
+  },
+  "menu-item#esportivo-infantil": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/esportivo/infantil", "text": "Infantil" }
+    }
+  },
+  "menu-item#esportivo-acessorios": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/esportivo/acessorios", "text": "Acessórios" }
+    }
+  },
+  "menu-item#esportivo-marcas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/esportivo/marcas", "text": "Marcas" }
+    }
+  },
+  "menu-item#esportivo-ofertas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/esportivo/ofertas", "text": "Ofertas" }
+    }
+  },
+  "menu-item#esportivo-conferir-tudo": {
+    "props": {
+      "type": "custom",
+      "blockClass": "conferir-tudo",
+      "itemProps": { "type": "internal", "href": "/esportivo", "text": "conferir tudo" }
+    }
+  },
+
+  // ─── ELETRÔNICOS ──────────────────────────────────────────
+  "menu-item#eletronicos": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/eletronicos",
+        "text": "Eletrônicos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#eletronicos"]
+  },
+  "vtex.menu@2.x:submenu#eletronicos": {
+    "props": { "width": "auto" },
+    "children": ["vtex.menu@2.x:menu#eletronicos"]
+  },
+  "vtex.menu@2.x:menu#eletronicos": {
+    "props": { "orientation": "vertical" },
+    "children": [
+      "menu-item#eletronicos-novidades",
+      "menu-item#eletronicos-celulares",
+      "menu-item#eletronicos-notebooks",
+      "menu-item#eletronicos-fones",
+      "menu-item#eletronicos-tvs",
+      "menu-item#eletronicos-marcas",
+      "menu-item#eletronicos-ofertas",
+      "menu-item#eletronicos-conferir-tudo"
+    ]
+  },
+  "menu-item#eletronicos-novidades": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/eletronicos/novidades", "text": "Novidades" }
+    }
+  },
+  "menu-item#eletronicos-celulares": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/eletronicos/celulares", "text": "Celulares" }
+    }
+  },
+  "menu-item#eletronicos-notebooks": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/eletronicos/notebooks", "text": "Notebooks" }
+    }
+  },
+  "menu-item#eletronicos-fones": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/eletronicos/fones", "text": "Fones de Ouvido" }
+    }
+  },
+  "menu-item#eletronicos-tvs": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/eletronicos/tvs", "text": "TVs" }
+    }
+  },
+  "menu-item#eletronicos-marcas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/eletronicos/marcas", "text": "Marcas" }
+    }
+  },
+  "menu-item#eletronicos-ofertas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/eletronicos/ofertas", "text": "Ofertas" }
+    }
+  },
+  "menu-item#eletronicos-conferir-tudo": {
+    "props": {
+      "type": "custom",
+      "blockClass": "conferir-tudo",
+      "itemProps": { "type": "internal", "href": "/eletronicos", "text": "conferir tudo" }
+    }
+  },
+
+  // ─── JEANS ────────────────────────────────────────────────
+  "menu-item#jeans": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/jeans",
+        "text": "Jeans"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#jeans"]
+  },
+  "vtex.menu@2.x:submenu#jeans": {
+    "props": { "width": "auto" },
+    "children": ["vtex.menu@2.x:menu#jeans"]
+  },
+  "vtex.menu@2.x:menu#jeans": {
+    "props": { "orientation": "vertical" },
+    "children": [
+      "menu-item#jeans-novidades",
+      "menu-item#jeans-masculino",
+      "menu-item#jeans-feminino",
+      "menu-item#jeans-infantil",
+      "menu-item#jeans-marcas",
+      "menu-item#jeans-ofertas",
+      "menu-item#jeans-conferir-tudo"
+    ]
+  },
+  "menu-item#jeans-novidades": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/jeans/novidades", "text": "Novidades" }
+    }
+  },
+  "menu-item#jeans-masculino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/jeans/masculino", "text": "Masculino" }
+    }
+  },
+  "menu-item#jeans-feminino": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/jeans/feminino", "text": "Feminino" }
+    }
+  },
+  "menu-item#jeans-infantil": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/jeans/infantil", "text": "Infantil" }
+    }
+  },
+  "menu-item#jeans-marcas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/jeans/marcas", "text": "Marcas" }
+    }
+  },
+  "menu-item#jeans-ofertas": {
+    "props": {
+      "type": "custom",
+      "itemProps": { "type": "internal", "href": "/jeans/ofertas", "text": "Ofertas" }
+    }
+  },
+  "menu-item#jeans-conferir-tudo": {
+    "props": {
+      "type": "custom",
+      "blockClass": "conferir-tudo",
+      "itemProps": { "type": "internal", "href": "/jeans", "text": "conferir tudo" }
+    }
+  }
+}

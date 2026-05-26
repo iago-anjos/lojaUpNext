@@ -1,0 +1,61 @@
+.containerNormal {
+  width: 280px;
+  height: 477px;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  width: 237px;
+  height: 237.635px;
+}
+
+.image {
+  width: 237px;
+  height: 237.635px;
+  object-fit: cover;
+}
+
+.nameContainer {
+  flex-grow: 0;
+  padding-top: 0;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.brandName {
+  color: #2c2d30;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.element {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.spacer {
+  display: none;
+}
+
+.priceContainer {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 22px;
+}
+
+.quantitySelectorTitle--shelf {
+  display: none;
+}
+
+.containerNormal {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+}
+
+.containerNormal:hover {
+  filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.55));
+}

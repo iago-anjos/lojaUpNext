@@ -1,0 +1,58 @@
+.menuContainer--institucional__footer {
+  padding: 0 !important;
+}
+
+.menuItem--institucional__footer {
+  padding: 0 !important;
+  margin-bottom: 8px !important;
+  min-height: unset !important;
+  height: auto !important;
+}
+
+.menuItem--institucional__footer :global(.vtex-menu-2-x-styledLinkContainer) {
+  padding: 0 !important;
+}
+
+.menuContainer--institucional__footer :global(.vtex-menu-2-x-styledLink) {
+  color: #666 !important;
+  font-family: "Istok Web", sans-serif !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  text-decoration: none !important;
+}
+
+.menuContainer--institucional__footer :global(.vtex-menu-2-x-menuItem):hover {
+  background: none !important;
+  border: none !important;
+  border-left: none !important;
+}
+
+.menuContainer--institucional__footer
+  :global(.vtex-menu-2-x-styledLinkContainer):hover {
+  background: none !important;
+  border: none !important;
+  border-left: none !important;
+}
+
+.menuContainer--institucional__footer :global(.vtex-menu-2-x-styledLink):hover {
+  color: #666 !important;
+  text-decoration: none !important;
+  border: none !important;
+}
+
+.menuContainer--institucional__footer
+  :global(.vtex-menu-2-x-styledLinkContainer) {
+  margin: 0 !important;
+  padding: 8px 0 !important;
+}
+
+.menuContainer--institucional__footer
+  :global(.vtex-menu-2-x-styledLinkContainer) {
+  margin-left: 0 !important;
+}
+
+.menuContainerNav--institucional__footer {
+  justify-content: flex-start !important;
+}

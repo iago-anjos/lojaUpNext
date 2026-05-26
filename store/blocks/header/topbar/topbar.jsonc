@@ -2,30 +2,51 @@
   "flex-layout.row#topbar": {
     "props": {
       "blockClass": "wrapper__topbar",
-      "fullWidth": true,
-      "verticalAlign": "middle"
+      "fullWidth": true
     },
     "children": [
-      "rich-text#link-whatsapp",
-      "rich-text#link-oferta"
+      "flex-layout.col#whatsapp-col",
+      "flex-layout.col#oferta-col"
     ]
   },
-  "rich-text#link-whatsapp": {
+  "flex-layout.col#whatsapp-col": {
+    "props": {
+      "blockClass": [
+        "wrapper__topbar",
+        "whatsapp-col__topbar"
+      ]
+    },
+    "children": [
+      "rich-text#whatsapp"
+    ]
+  },
+  "flex-layout.col#oferta-col": {
+    "props": {
+      "blockClass": [
+        "wrapper__topbar",
+        "oferta-col__topbar"
+      ]
+    },
+    "children": [
+      "rich-text#oferta"
+    ]
+  },
+  "rich-text#whatsapp": {
     "props": {
       "blockClass": [
         "text__topbar",
         "whatsapp__topbar"
       ],
-      "text": "![whatsapp](assets/images/icon-whatsapp.svg)atendimento (41)9999-9999"
+      "text": "![whatsapp](assets/images/icon-whatsapp.svg) Atendimento (41) 9999-9999"
     }
   },
-  "rich-text#link-oferta": {
+  "rich-text#oferta": {
     "props": {
       "blockClass": [
         "text__topbar",
         "oferta__topbar"
       ],
-      "text": "![whatsapp](assets/images/icon-whatsapp.svg)atendimento (41)9999-9999"
+      "text": "[![oferta](assets/images/icon-oferta.svg) Ver Ofertas](/ofertas)"
     }
   }
 }

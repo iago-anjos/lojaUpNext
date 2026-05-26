@@ -1,0 +1,41 @@
+.logoContainer--navbar {
+  padding: 0;
+  width: 169px;
+  height: 51px;
+}
+
+.searchBarContainer {
+  padding: 0 !important;
+  width: 465px !important;
+  max-width: 465px !important;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  height: 40px !important;
+  border-radius: 4px !important;
+  border: 1px solid #c80d65 !important;
+  background-color: #61163a !important;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #fff !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  background-color: #61163a !important;
+  color: #fff !important;
+}
+
+.searchBarIcon {
+  color: #c80d65 !important;
+}

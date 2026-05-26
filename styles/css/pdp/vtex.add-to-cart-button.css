@@ -1,0 +1,25 @@
+/* Container controla a largura */
+.buttonDataContainer--pdp {
+  width: 223px;
+}
+
+/* Botão real é vtex-button do styleguide */
+.buttonDataContainer--pdp :global(.vtex-button) {
+  background-color: #1faf38 !important;
+  border-color: #1faf38 !important;
+  width: 100% !important;
+  height: 41px !important;
+  border-radius: 3px !important;
+  min-height: unset !important;
+}
+
+.buttonDataContainer--pdp :global(.vtex-button):hover {
+  background-color: #18962f !important;
+  border-color: #18962f !important;
+}
+
+.buttonText--pdp {
+  font-family: "Istok Web", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}

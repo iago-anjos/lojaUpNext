@@ -1,13 +1,27 @@
 @font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter_18pt-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Istok Web";
-  src: url(assets/fonts/IstokWeb-Regular.ttf);
+  src: url("assets/fonts/IstokWeb-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Istok Web";
-  src: url(assets/fonts/IstokWeb-Bold.ttf);
+  src: url("assets/fonts/IstokWeb-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }

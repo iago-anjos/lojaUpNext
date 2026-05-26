@@ -1,0 +1,154 @@
+/* Product Name */
+.productBrand--pdp {
+  color: #2c2d30;
+  font-family: "Istok Web", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* Hide labels "cor:", "Tamanho" */
+.skuSelectorContainer--pdp .skuSelectorName,
+.skuSelectorContainer--pdp .skuSelectorNameSeparator {
+  display: none;
+}
+
+/* Each variation group styled as a selection box */
+.skuSelectorContainer--pdp .skuSelectorSubcontainer {
+  width: 155px;
+  height: 41px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  background: #fff;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+/* Options inline inside the box */
+.skuSelectorContainer--pdp .skuSelectorOptionsList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+}
+
+/* Product Description */
+.productDescriptionTitle {
+  color: #000;
+  font-family: "Istok Web", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.productDescriptionText {
+  color: #333;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 149.26%;
+}
+
+/* Product Images */
+.productImagesGalerySlider {
+  max-height: 400px !important;
+  max-width: 400px !important;
+}
+
+.skuSelectorContainer--pdp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 29px;
+}
+
+/* Shipping Simulator */
+.shippingContainer {
+  display: grid;
+  grid-template-columns: 233px 85px;
+  column-gap: 21px;
+  margin-top: 8px;
+  --color-link: #2c2d30;
+}
+
+.shippingContainer::before {
+  content: "Calcular o valor do frete e verificar disponibilidade:";
+  grid-column: 1 / -1;
+  color: #2c2d30;
+  font-family: "Istok Web", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.shippingContainer :global(.vtex-input__label) {
+  display: none;
+}
+
+.shippingContainer :global(.vtex-address-form__postalCode) {
+  padding-bottom: 0 !important;
+}
+
+.shippingContainer :global(.vtex-input-prefix__group) {
+  width: 233px !important;
+  height: 41px !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 3px !important;
+  background: #fff !important;
+  box-sizing: border-box !important;
+}
+
+.shippingContainer :global(.vtex-address-form-4-x-input)::placeholder {
+  color: #787878;
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.shippingContainer :global(.vtex-button) {
+  width: 85px !important;
+  height: 41px !important;
+  min-height: unset !important;
+  border-radius: 3px !important;
+  background-color: #2c2d30 !important;
+  border-color: #2c2d30 !important;
+  align-self: start;
+}
+
+.shippingContainer :global(.vtex-button__label) {
+  font-size: 0 !important;
+}
+
+.shippingContainer :global(.vtex-button__label)::after {
+  content: "OK";
+  font-size: 18px;
+  font-family: "Istok Web", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) {
+  display: block !important;
+  width: 339px;
+  text-align: right;
+  padding-top: 6px !important;
+  padding-bottom: 0 !important;
+  color: #2c2d30;
+  font-family: "Istok Web", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.shippingContainer :global(.vtex__icon-external-link) {
+  display: none;
+}

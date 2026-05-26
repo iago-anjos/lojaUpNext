@@ -1,0 +1,102 @@
+{
+  "flex-layout.row#banners-season": {
+    "props": {
+      "blockClass": "banners-season",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#banner-verao",
+      "flex-layout.col#banner-primavera",
+      "flex-layout.col#banner-outono",
+      "flex-layout.col#banner-inverno"
+    ]
+  },
+
+  "flex-layout.col#banner-verao": {
+    "props": { "blockClass": "item__banners-season" },
+    "children": ["vtex.store-link:link#banner-verao"]
+  },
+  "vtex.store-link:link#banner-verao": {
+    "props": { "href": "/verao", "blockClass": "link__banners-season" },
+    "children": ["image#banner-verao", "rich-text#banner-verao-label"]
+  },
+  "image#banner-verao": {
+    "props": {
+      "src": "assets/images/moda-verao.png",
+      "alt": "Moda Verão",
+      "blockClass": "img__banners-season"
+    }
+  },
+  "rich-text#banner-verao-label": {
+    "props": {
+      "text": "Moda <br> Verão",
+      "blockClass": "label__banners-season"
+    }
+  },
+
+  "flex-layout.col#banner-primavera": {
+    "props": { "blockClass": "item__banners-season" },
+    "children": ["vtex.store-link:link#banner-primavera"]
+  },
+  "vtex.store-link:link#banner-primavera": {
+    "props": { "href": "/primavera", "blockClass": "link__banners-season" },
+    "children": ["image#banner-primavera", "rich-text#banner-primavera-label"]
+  },
+  "image#banner-primavera": {
+    "props": {
+      "src": "assets/images/moda-primavera.png",
+      "alt": "Moda Primavera",
+      "blockClass": "img__banners-season"
+    }
+  },
+  "rich-text#banner-primavera-label": {
+    "props": {
+      "text": "Moda <br> Primavera",
+      "blockClass": "label__banners-season"
+    }
+  },
+
+  "flex-layout.col#banner-outono": {
+    "props": { "blockClass": "item__banners-season" },
+    "children": ["vtex.store-link:link#banner-outono"]
+  },
+  "vtex.store-link:link#banner-outono": {
+    "props": { "href": "/outono", "blockClass": "link__banners-season" },
+    "children": ["image#banner-outono", "rich-text#banner-outono-label"]
+  },
+  "image#banner-outono": {
+    "props": {
+      "src": "assets/images/moda-outono.png",
+      "alt": "Moda Outono",
+      "blockClass": "img__banners-season"
+    }
+  },
+  "rich-text#banner-outono-label": {
+    "props": {
+      "text": "Moda <br> Outono",
+      "blockClass": "label__banners-season"
+    }
+  },
+
+  "flex-layout.col#banner-inverno": {
+    "props": { "blockClass": "item__banners-season" },
+    "children": ["vtex.store-link:link#banner-inverno"]
+  },
+  "vtex.store-link:link#banner-inverno": {
+    "props": { "href": "/inverno", "blockClass": "link__banners-season" },
+    "children": ["image#banner-inverno", "rich-text#banner-inverno-label"]
+  },
+  "image#banner-inverno": {
+    "props": {
+      "src": "assets/images/moda-inverno.png",
+      "alt": "Moda Inverno",
+      "blockClass": "img__banners-season"
+    }
+  },
+  "rich-text#banner-inverno-label": {
+    "props": {
+      "text": "Moda <br> Inverno",
+      "blockClass": "label__banners-season"
+    }
+  }
+}

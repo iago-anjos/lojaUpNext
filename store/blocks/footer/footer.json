@@ -1,78 +1,457 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#main__footer",
+      "flex-layout.row#payment__footer",
+      "flex-layout.row#copyright__footer"
     ]
   },
-  "flex-layout.row#footer-1-desktop": {
+  "flex-layout.row#main__footer": {
+    "props": {
+      "blockClass": "main__footer",
+      "fullWidth": true,
+      "preventVerticalStretch": true
+    },
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
-    ],
+      "flex-layout.col#institucional__footer",
+      "flex-layout.col#social__footer",
+      "flex-layout.col#atendimento__footer",
+      "flex-layout.col#selos__footer"
+    ]
+  },
+  "flex-layout.col#institucional__footer": {
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "institucional__footer",
+      "preventVerticalStretch": true,
+      "verticalAlign": "top"
+    },
+    "children": [
+      "rich-text#title__institucional__footer",
+      "vtex.menu@2.x:menu#institucional__footer"
+    ]
+  },
+  "rich-text#title__institucional__footer": {
+    "props": {
+      "text": "**INSTITUCIONAL**",
+      "blockClass": "title__footer"
     }
   },
-
-  "social-networks": {
+  "vtex.menu@2.x:menu#institucional__footer": {
     "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
+      "orientation": "vertical",
+      "blockClass": "institucional__footer"
+    },
+    "children": [
+      "menu-item#footer-atendimento",
+      "menu-item#footer-quem-somos",
+      "menu-item#footer-privacidade",
+      "menu-item#footer-entrega",
+      "menu-item#footer-trocas",
+      "menu-item#footer-como-comprar"
+    ]
+  },
+  "menu-item#footer-atendimento": {
+    "props": {
+      "id": "menu-item-footer-atendimento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/atendimento",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
     }
   },
-
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
+  "menu-item#footer-quem-somos": {
     "props": {
-      "blockClass": "payment-methods"
+      "id": "menu-item-footer-quem-somos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quem-somos",
+        "noFollow": false,
+        "tagTitle": "Quem somos",
+        "text": "Quem somos"
+      }
     }
+  },
+  "menu-item#footer-privacidade": {
+    "props": {
+      "id": "menu-item-footer-privacidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-privacidade",
+        "noFollow": false,
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
+      }
+    }
+  },
+  "menu-item#footer-entrega": {
+    "props": {
+      "id": "menu-item-footer-entrega",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-entrega",
+        "noFollow": false,
+        "tagTitle": "Política de Entrega",
+        "text": "Política de Entrega"
+      }
+    }
+  },
+  "menu-item#footer-trocas": {
+    "props": {
+      "id": "menu-item-footer-trocas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/trocas-e-devolucoes",
+        "noFollow": false,
+        "tagTitle": "Trocas e Devoluções",
+        "text": "Trocas e Devoluções"
+      }
+    }
+  },
+  "menu-item#footer-como-comprar": {
+    "props": {
+      "id": "menu-item-footer-como-comprar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/como-comprar",
+        "noFollow": false,
+        "tagTitle": "Como Comprar",
+        "text": "Como Comprar"
+      }
+    }
+  },
+  "flex-layout.col#social__footer": {
+    "props": {
+      "blockClass": "social__footer",
+      "preventVerticalStretch": true,
+      "verticalAlign": "top"
+    },
+    "children": [
+      "rich-text#title__social__footer",
+      "flex-layout.row#icons__social__footer"
+    ]
+  },
+  "rich-text#title__social__footer": {
+    "props": {
+      "text": "**REDES SOCIAIS**",
+      "blockClass": "title__footer"
+    }
+  },
+  "flex-layout.row#icons__social__footer": {
+    "props": {
+      "blockClass": "icons__social__footer",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "link#instagram__footer",
+      "link#tiktok__footer",
+      "link#facebook__footer",
+      "link#blogger__footer"
+    ]
+  },
+  "link#instagram__footer": {
+    "props": {
+      "href": "https://instagram.com/",
+      "target": "_blank",
+      "blockClass": "social__footer"
+    },
+    "children": [
+      "image#instagram__footer"
+    ]
+  },
+  "image#instagram__footer": {
+    "props": {
+      "src": "assets/images/icon-instagram.svg",
+      "blockClass": "social__footer",
+      "width": "56",
+      "height": "56"
+    }
+  },
+  "link#tiktok__footer": {
+    "props": {
+      "href": "https://tiktok.com/",
+      "target": "_blank",
+      "blockClass": "social__footer"
+    },
+    "children": [
+      "image#tiktok__footer"
+    ]
+  },
+  "image#tiktok__footer": {
+    "props": {
+      "src": "assets/images/icon-tiktok.svg",
+      "blockClass": "social__footer",
+      "width": "56",
+      "height": "56"
+    }
+  },
+  "link#facebook__footer": {
+    "props": {
+      "href": "https://facebook.com/",
+      "target": "_blank",
+      "blockClass": "social__footer"
+    },
+    "children": [
+      "image#facebook__footer"
+    ]
+  },
+  "image#facebook__footer": {
+    "props": {
+      "src": "assets/images/icon-facebook.svg",
+      "blockClass": "social__footer",
+      "width": "56",
+      "height": "56"
+    }
+  },
+  "link#blogger__footer": {
+    "props": {
+      "href": "https://blogger.com/",
+      "target": "_blank",
+      "blockClass": "social__footer"
+    },
+    "children": [
+      "image#blogger__footer"
+    ]
+  },
+  "image#blogger__footer": {
+    "props": {
+      "src": "assets/images/icon-blogger.svg",
+      "blockClass": "social__footer",
+      "width": "56",
+      "height": "56"
+    }
+  },
+  "flex-layout.col#atendimento__footer": {
+    "props": {
+      "blockClass": "atendimento__footer",
+      "preventVerticalStretch": true,
+      "verticalAlign": "top"
+    },
+    "children": [
+      "rich-text#title__atendimento__footer",
+      "rich-text#desc__atendimento__footer",
+      "flex-layout.row#phone__atendimento__footer",
+      "flex-layout.row#whatsapp__atendimento__footer",
+      "flex-layout.row#email__atendimento__footer",
+      "rich-text#hours__atendimento__footer"
+    ]
+  },
+  "rich-text#title__atendimento__footer": {
+    "props": {
+      "text": "**ATENDIMENTO**",
+      "blockClass": "title__footer"
+    }
+  },
+  "rich-text#desc__atendimento__footer": {
+    "props": {
+      "text": "Dúvidas sobre produtos e serviço de entrega?",
+      "blockClass": "desc__atendimento__footer"
+    }
+  },
+  "flex-layout.row#phone__atendimento__footer": {
+    "props": {
+      "blockClass": "contact__atendimento__footer",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#phone__atendimento__footer",
+      "rich-text#phone__atendimento__footer"
+    ]
+  },
+  "image#phone__atendimento__footer": {
+    "props": {
+      "src": "assets/images/icon-fone.svg",
+      "blockClass": "icon__atendimento__footer",
+      "width": "20",
+      "height": "20"
+    }
+  },
+  "rich-text#phone__atendimento__footer": {
+    "props": {
+      "text": "(11) 3333-3333",
+      "blockClass": "contact__atendimento__footer"
+    }
+  },
+  "flex-layout.row#whatsapp__atendimento__footer": {
+    "props": {
+      "blockClass": "contact__atendimento__footer",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#whatsapp__atendimento__footer",
+      "rich-text#whatsapp__atendimento__footer"
+    ]
+  },
+  "image#whatsapp__atendimento__footer": {
+    "props": {
+      "src": "assets/images/icon-whats.svg",
+      "blockClass": "icon__atendimento__footer",
+      "width": "20",
+      "height": "20"
+    }
+  },
+  "rich-text#whatsapp__atendimento__footer": {
+    "props": {
+      "text": "(11) 99999-9999",
+      "blockClass": "contact__atendimento__footer"
+    }
+  },
+  "flex-layout.row#email__atendimento__footer": {
+    "props": {
+      "blockClass": "contact__atendimento__footer",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#email__atendimento__footer",
+      "rich-text#email__atendimento__footer"
+    ]
+  },
+  "image#email__atendimento__footer": {
+    "props": {
+      "src": "assets/images/icon-email.svg",
+      "blockClass": "icon__atendimento__footer",
+      "width": "20",
+      "height": "20"
+    }
+  },
+  "rich-text#email__atendimento__footer": {
+    "props": {
+      "text": "sac@email.com.br",
+      "blockClass": "contact__atendimento__footer"
+    }
+  },
+  "rich-text#hours__atendimento__footer": {
+    "props": {
+      "text": "Segunda a Sexta das 9h às 18h.\nExceto feriado nacional.",
+      "blockClass": "hours__atendimento__footer"
+    }
+  },
+  "flex-layout.col#selos__footer": {
+    "props": {
+      "blockClass": "selos__footer",
+      "preventVerticalStretch": true,
+      "verticalAlign": "top"
+    },
+    "children": [
+      "rich-text#title__selos__footer",
+      "flex-layout.row#top__selos__footer",
+      "image#google__selos__footer"
+    ]
+  },
+  "rich-text#title__selos__footer": {
+    "props": {
+      "text": "**SELOS**",
+      "blockClass": "title__footer"
+    }
+  },
+  "flex-layout.row#top__selos__footer": {
+    "props": {
+      "blockClass": "top__selos__footer",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#loja-confiavel__selos__footer",
+      "image#clearsale__selos__footer"
+    ]
+  },
+  "image#loja-confiavel__selos__footer": {
+    "props": {
+      "src": "assets/images/selo-loja-confiavel.png",
+      "blockClass": "selo__footer",
+      "width": "80",
+      "height": "80"
+    }
+  },
+  "image#clearsale__selos__footer": {
+    "props": {
+      "src": "assets/images/selo-clearsale.png",
+      "blockClass": "selo__footer",
+      "width": "120",
+      "height": "50"
+    }
+  },
+  "image#google__selos__footer": {
+    "props": {
+      "src": "assets/images/selo-google-safe.png",
+      "blockClass": "google__selos__footer",
+      "width": "160",
+      "height": "50"
+    }
+  },
+  "flex-layout.row#payment__footer": {
+    "props": {
+      "blockClass": "payment__footer",
+      "fullWidth": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "accepted-payment-methods"
+    ]
   },
   "accepted-payment-methods": {
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "paymentMethods": [
+        "Visa",
+        "MasterCard",
+        "Elo",
+        "Hipercard",
+        "American Express",
+        "Diners Club",
+        "Boleto Bancário"
+      ]
     }
   },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
+  "flex-layout.row#copyright__footer": {
     "props": {
-      "blockClass": "credits"
-    }
+      "blockClass": "copyright__footer",
+      "fullWidth": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#copyright__footer",
+      "image#logo__footer"
+    ]
   },
-  "rich-text#footer": {
+  "rich-text#copyright__footer": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+      "text": "© 2024 Copyright - UPNEXT - Todos os direitos reservados.",
+      "blockClass": "copyright__footer"
     }
   },
-
+  "image#logo__footer": {
+    "props": {
+      "src": "assets/images/logo-upnext.png",
+      "blockClass": "logo__footer",
+      "width": "120",
+      "height": "38"
+    }
+  },
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#1-footer-mobile",
@@ -80,7 +459,9 @@
     ]
   },
   "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
+    "children": [
+      "flex-layout.col#footer-1-mobile"
+    ],
     "props": {
       "blockClass": "payment-methods",
       "paddingTop": 4,
@@ -105,12 +486,28 @@
       "paddingTop": 4,
       "paddingBottom": 4
     },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile"
+    ]
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "© 2024 Copyright - UPNEXT - Todos os direitos reservados.",
       "blockClass": "footer"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/"
+        }
+      ]
     }
   }
 }

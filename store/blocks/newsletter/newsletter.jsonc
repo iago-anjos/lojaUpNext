@@ -1,0 +1,92 @@
+{
+  "flex-layout.row#newsletter": {
+    "props": {
+      "blockClass": "newsletter",
+      "fullWidth": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#wrapper__newsletter"
+    ]
+  },
+  "flex-layout.col#wrapper__newsletter": {
+    "props": {
+      "blockClass": "wrapper__newsletter",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "flex-layout.row#inner__newsletter"
+    ]
+  },
+  "flex-layout.row#inner__newsletter": {
+    "props": {
+      "blockClass": "inner__newsletter",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#icontext__newsletter",
+      "flex-layout.col#form__newsletter"
+    ]
+  },
+  "flex-layout.col#icontext__newsletter": {
+    "props": {
+      "blockClass": "icontext__newsletter",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#newsletter",
+      "flex-layout.col#text__newsletter"
+    ]
+  },
+  "image#newsletter": {
+    "props": {
+      "src": "assets/images/icon-newsletter.svg",
+      "blockClass": "newsletter",
+      "width": "61",
+      "height": "60"
+    }
+  },
+  "flex-layout.col#text__newsletter": {
+    "props": {
+      "blockClass": "text__newsletter",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#title__newsletter",
+      "rich-text#desc__newsletter"
+    ]
+  },
+  "rich-text#title__newsletter": {
+    "props": {
+      "text": "**Se conecte com a gente!**",
+      "blockClass": "title__newsletter"
+    }
+  },
+  "rich-text#desc__newsletter": {
+    "props": {
+      "text": "Receba ofertas recomendadas e preços exclusivos",
+      "blockClass": "desc__newsletter"
+    }
+  },
+  "flex-layout.col#form__newsletter": {
+    "props": {
+      "blockClass": "form__newsletter",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "newsletter"
+    ]
+  },
+  "newsletter": {
+    "props": {
+      "blockClass": "newsletter",
+      "label": "",
+      "placeholder": "Digite seu email",
+      "submit": "CADASTRAR"
+    }
+  }
+}

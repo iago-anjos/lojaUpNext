@@ -1,0 +1,202 @@
+{
+  "flex-layout.row#categories": {
+    "props": {
+      "blockClass": "categories",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#cat-masculino",
+      "flex-layout.col#cat-feminino",
+      "flex-layout.col#cat-infantil",
+      "flex-layout.col#cat-eletronicos",
+      "flex-layout.col#cat-acessorios",
+      "flex-layout.col#cat-novidades"
+    ]
+  },
+  "flex-layout.col#cat-masculino": {
+    "props": {
+      "blockClass": "item__categories"
+    },
+    "children": [
+      "vtex.store-link:link#cat-masculino"
+    ]
+  },
+  "vtex.store-link:link#cat-masculino": {
+    "props": {
+      "href": "/masculino",
+      "blockClass": "cat"
+    },
+    "children": [
+      "image#cat-masculino",
+      "rich-text#cat-masculino-label"
+    ]
+  },
+  "image#cat-masculino": {
+    "props": {
+      "src": "assets/images/cat-masculino.png",
+      "alt": "Masculino",
+      "blockClass": "cat"
+    }
+  },
+  "rich-text#cat-masculino-label": {
+    "props": {
+      "text": "Masculino",
+      "blockClass": "label__categories"
+    }
+  },
+  "flex-layout.col#cat-feminino": {
+    "props": {
+      "blockClass": "item__categories"
+    },
+    "children": [
+      "vtex.store-link:link#cat-feminino"
+    ]
+  },
+  "vtex.store-link:link#cat-feminino": {
+    "props": {
+      "href": "/feminino",
+      "blockClass": "cat"
+    },
+    "children": [
+      "image#cat-feminino",
+      "rich-text#cat-feminino-label"
+    ]
+  },
+  "image#cat-feminino": {
+    "props": {
+      "src": "assets/images/cat-feminino.png",
+      "alt": "Feminino",
+      "blockClass": "cat"
+    }
+  },
+  "rich-text#cat-feminino-label": {
+    "props": {
+      "text": "Feminino",
+      "blockClass": "label__categories"
+    }
+  },
+  "flex-layout.col#cat-infantil": {
+    "props": {
+      "blockClass": "item__categories"
+    },
+    "children": [
+      "vtex.store-link:link#cat-infantil"
+    ]
+  },
+  "vtex.store-link:link#cat-infantil": {
+    "props": {
+      "href": "/infantil",
+      "blockClass": "cat"
+    },
+    "children": [
+      "image#cat-infantil",
+      "rich-text#cat-infantil-label"
+    ]
+  },
+  "image#cat-infantil": {
+    "props": {
+      "src": "assets/images/cat-infantil.png",
+      "alt": "Infantil",
+      "blockClass": "cat"
+    }
+  },
+  "rich-text#cat-infantil-label": {
+    "props": {
+      "text": "Infantil",
+      "blockClass": "label__categories"
+    }
+  },
+  "flex-layout.col#cat-eletronicos": {
+    "props": {
+      "blockClass": "item__categories"
+    },
+    "children": [
+      "vtex.store-link:link#cat-eletronicos"
+    ]
+  },
+  "vtex.store-link:link#cat-eletronicos": {
+    "props": {
+      "href": "/eletronicos",
+      "blockClass": "cat"
+    },
+    "children": [
+      "image#cat-eletronicos",
+      "rich-text#cat-eletronicos-label"
+    ]
+  },
+  "image#cat-eletronicos": {
+    "props": {
+      "src": "assets/images/cat-eletronicos.png",
+      "alt": "Eletrônicos",
+      "blockClass": "cat"
+    }
+  },
+  "rich-text#cat-eletronicos-label": {
+    "props": {
+      "text": "Eletrônicos",
+      "blockClass": "label__categories"
+    }
+  },
+  "flex-layout.col#cat-acessorios": {
+    "props": {
+      "blockClass": "item__categories"
+    },
+    "children": [
+      "vtex.store-link:link#cat-acessorios"
+    ]
+  },
+  "vtex.store-link:link#cat-acessorios": {
+    "props": {
+      "href": "/acessorios",
+      "blockClass": "cat"
+    },
+    "children": [
+      "image#cat-acessorios",
+      "rich-text#cat-acessorios-label"
+    ]
+  },
+  "image#cat-acessorios": {
+    "props": {
+      "src": "assets/images/cat-acessorios.png",
+      "alt": "Acessórios",
+      "blockClass": "cat"
+    }
+  },
+  "rich-text#cat-acessorios-label": {
+    "props": {
+      "text": "Acessórios",
+      "blockClass": "label__categories"
+    }
+  },
+  "flex-layout.col#cat-novidades": {
+    "props": {
+      "blockClass": "item__categories"
+    },
+    "children": [
+      "vtex.store-link:link#cat-novidades"
+    ]
+  },
+  "vtex.store-link:link#cat-novidades": {
+    "props": {
+      "href": "/novidades",
+      "blockClass": "cat"
+    },
+    "children": [
+      "image#cat-novidades",
+      "rich-text#cat-novidades-label"
+    ]
+  },
+  "image#cat-novidades": {
+    "props": {
+      "src": "assets/images/cat-novidades.png",
+      "alt": "Novidades",
+      "blockClass": "cat"
+    }
+  },
+  "rich-text#cat-novidades-label": {
+    "props": {
+      "text": "Novidades",
+      "blockClass": "label__categories"
+    }
+  }
+}

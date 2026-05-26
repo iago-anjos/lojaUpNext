@@ -1,0 +1,222 @@
+/* DEALS */
+.flexRow--deals {
+  background: #fff;
+  margin-top: 24px;
+}
+
+.flexRowContent--deals {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 25px;
+  gap: 16px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.flexCol--card__deals {
+  width: 332px;
+  height: 70px;
+  border-radius: 3px;
+  border: 1px solid #cdcdcd;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CATEGORIES */
+.flexRow--categories {
+  overflow-x: hidden;
+}
+
+.flexRowContent--categories {
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 25px;
+  box-sizing: border-box;
+}
+
+.flexCol--item__categories {
+  align-items: center;
+}
+
+/* SHELF TITLE */
+.flexRowContent--shelf-title {
+  max-width: 1388px;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+/* SHELF */
+.flexRow--shelf {
+  margin: 24px 0 104px;
+}
+
+.flexRowContent--shelf {
+  width: 100%;
+  max-width: 1388px;
+  height: 531px;
+  background: #f5f5f5;
+  border-radius: 3px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  align-items: stretch;
+  position: relative;
+  overflow-x: clip;
+}
+
+.flexColChild--banner__shelf {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 333px;
+  height: 531px;
+  overflow: hidden;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.flexCol--products__shelf {
+  padding-left: 333px;
+  justify-content: center;
+}
+
+.flexColChild--products__shelf {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.flexCol--productRating {
+  margin-bottom: 0;
+  height: 0 !important;
+}
+
+.flexRowContent--buy__shelf {
+  height: 41px;
+  align-items: stretch;
+  gap: 8px;
+  padding: 0 8px;
+}
+
+.flexRowContent--buy__shelf :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  flex: 0 0 96px !important;
+  max-width: 96px !important;
+  min-width: 96px !important;
+}
+
+.flexRowContent--buy__shelf :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+  flex: 1 0 131px !important;
+}
+
+.flexRow--buy__shelf {
+  margin-top: auto;
+}
+
+.flexCol--qty__shelf {
+  flex: 0 0 96px !important;
+  width: 96px !important;
+  min-width: 96px !important;
+  max-width: 96px !important;
+}
+
+.flexCol--addtocart__shelf {
+  flex: 1 0 131px !important;
+  min-width: 131px !important;
+}
+
+.flexRow--listPriceRow__shelf {
+  margin-bottom: 4px;
+}
+
+.flexRowContent--listPriceRow__shelf {
+  padding-left: 22px;
+  align-items: center;
+  justify-content: flex-start !important;
+}
+
+.flexRowContent--listPriceRow__shelf :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  flex: 0 0 auto !important;
+  width: auto !important;
+}
+
+/* BANNERS OFFER */
+.flexRow--banners-offer {
+  margin: 24px 0;
+}
+
+.flexRowContent--banners-offer {
+  max-width: 1388px;
+  margin: 0 auto;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+/* BANNERS SEASON */
+.flexRow--banners-season {
+  margin: 24px 0;
+}
+
+.flexRowContent--banners-season {
+  max-width: 1388px;
+  margin: 0 auto;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+/* ABOUT US */
+.flexRow--about {
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 72px !important;
+  margin-bottom: 80px !important;
+  overflow: visible !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.flexRowContent--about {
+  width: 1388px !important;
+  height: 471px !important;
+  border-radius: 3px !important;
+  background-image: url("assets/images/background-aboutUs.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  overflow: visible !important;
+  position: relative !important;
+  align-items: flex-start !important;
+  box-sizing: border-box !important;
+}
+
+.flexRowContent--about :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  overflow: visible !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  justify-content: flex-start !important;
+}
+
+.flexCol--model__about {
+  width: 400px !important;
+  flex: 0 0 400px !important;
+  overflow: visible !important;
+  align-self: flex-start !important;
+  padding: 0 !important;
+  margin-left: 0 !important;
+}
+
+.flexCol--content__about {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  padding: 48px !important;
+  padding-top: 80px !important;
+  gap: 24px !important;
+  box-sizing: border-box !important;
+}

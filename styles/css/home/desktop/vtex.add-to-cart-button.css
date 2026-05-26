@@ -1,0 +1,10 @@
+.buttonText--shelf {
+  font-family: "Istok Web", sans-serif;
+  font-size: 18px;
+}
+
+.button--shelf {
+  width: 100% !important;
+  height: 41px !important;
+  min-height: unset !important;
+}

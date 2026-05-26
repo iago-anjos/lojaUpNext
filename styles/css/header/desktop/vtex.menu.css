@@ -1,0 +1,102 @@
+/* ─── Menu horizontal (navbar) ─────────────────────────── */
+.styledLink {
+  color: #fff;
+  text-align: center;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menuContainerNav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.menuContainer--horizontal {
+  gap: 8px;
+}
+
+.menuContainer--horizontal .styledLinkContainer:hover {
+  border-radius: 3px 3px 0 0;
+  background: #591032;
+  box-shadow:
+    12px 0 0 0 #591032,
+    -12px 0 0 0 #591032;
+}
+
+.menuContainer--horizontal .menuItem--isOpen .styledLinkContainer {
+  border-radius: 3px 3px 0 0;
+  background: #591032;
+  box-shadow:
+    12px 0 0 0 #591032,
+    -12px 0 0 0 #591032;
+}
+
+/* Cor do texto no hover */
+.menuContainer--horizontal .styledLinkContainer:hover .styledLink,
+.menuContainer--horizontal .menuItem--isOpen .styledLink {
+  color: #ffc700 !important;
+}
+
+/* Submenu (dropdown) */
+.submenu {
+  width: 251px;
+  box-shadow: 0 0 8.4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Faixa decorativa de 6px no topo do dropdown */
+.submenu::before {
+  content: "";
+  display: block;
+  width: 251px;
+  height: 6px;
+  background: #591032;
+}
+
+/* Lista vertical dentro do submenu */
+.menuContainer--vertical {
+  width: 251px;
+  background: #fff;
+  padding: 8px 0;
+  list-style: disc;
+}
+
+/* Cor do bullet (herda para o marcador, styledLink sobrescreve o texto) */
+.menuContainer--vertical .menuItem {
+  color: #910e4b;
+  padding: 0 20px;
+}
+
+/* Texto dos itens do submenu */
+.menuContainer--vertical .styledLink {
+  color: #333 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+}
+
+/* ─── Conferir tudo ─────────────────────────────────────── */
+.menuItem--conferir-tudo {
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+.styledLinkContainer--conferir-tudo {
+  width: 251px;
+  height: 39px;
+  border-radius: 0 0 5px 0;
+  background: linear-gradient(90deg, #910d4b 0%, #5f002c 100%);
+  display: flex !important;
+  align-items: center !important;
+  padding-left: 16px !important;
+}
+
+.styledLink--conferir-tudo {
+  color: #fff !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}

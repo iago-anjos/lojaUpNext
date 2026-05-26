@@ -1,86 +1,98 @@
 {
   "flex-layout.row#deals": {
+    "props": {
+      "blockClass": "deals",
+      "fullWidth": true
+    },
     "children": [
       "flex-layout.col#deals1",
       "flex-layout.col#deals2",
       "flex-layout.col#deals3",
       "flex-layout.col#deals4"
-    ],
-    "props": {
-      "blockClass": "deals"
-    }
-  },
-
-  "flex-layout.col#deals1": {
-    "children": [
-      "image#deal1",
-      "rich-text#deal1"
     ]
   },
-  "image#deal1": {
+  "flex-layout.col#deals1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": "24px"
+      "blockClass": "card__deals"
+    },
+    "children": [
+      "rich-text#deal1-title",
+      "rich-text#deal1-sub"
+    ]
+  },
+  "rich-text#deal1-title": {
+    "props": {
+      "text": "**MELHOR FRETE***",
+      "blockClass": "title__deals"
     }
   },
-  "rich-text#deal1": {
+  "rich-text#deal1-sub": {
     "props": {
-      "text": "Free shipping",
-      "blockClass": "deals"
+      "text": "para todo o Brasil",
+      "blockClass": "sub__deals"
     }
   },
   "flex-layout.col#deals2": {
+    "props": {
+      "blockClass": "card__deals"
+    },
     "children": [
-      "image#deal2",
-      "rich-text#deal2"
+      "rich-text#deal2-title",
+      "rich-text#deal2-sub"
     ]
   },
-  "image#deal2": {
+  "rich-text#deal2-title": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "maxHeight": "24px"
+      "text": "**DESCONTOS ESPECIAIS**",
+      "blockClass": "title__deals"
     }
   },
-  "rich-text#deal2": {
+  "rich-text#deal2-sub": {
     "props": {
-      "text": "One day delivery",
-      "blockClass": "deals"
+      "text": "para compras em volume",
+      "blockClass": "sub__deals"
     }
   },
   "flex-layout.col#deals3": {
+    "props": {
+      "blockClass": "card__deals"
+    },
     "children": [
-      "image#deal3",
-      "rich-text#deal3"
+      "rich-text#deal3-title",
+      "rich-text#deal3-sub"
     ]
   },
-  "image#deal3": {
+  "rich-text#deal3-title": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
-      "maxHeight": "24px"
+      "text": "**ENTREGA EXPRESSA**",
+      "blockClass": "title__deals"
     }
   },
-  "rich-text#deal3": {
+  "rich-text#deal3-sub": {
     "props": {
-      "text": "Pick up in store",
-      "blockClass": "deals"
+      "text": "em até 48 horas*",
+      "blockClass": "sub__deals"
     }
   },
   "flex-layout.col#deals4": {
+    "props": {
+      "blockClass": "card__deals"
+    },
     "children": [
-      "image#deal4",
-      "rich-text#deal4"
+      "rich-text#deal4-title",
+      "rich-text#deal4-sub"
     ]
   },
-  "image#deal4": {
+  "rich-text#deal4-title": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
-      "maxHeight": "24px"
+      "text": "**PARCELE EM ATÉ 6X**",
+      "blockClass": "title__deals"
     }
   },
-  "rich-text#deal4": {
+  "rich-text#deal4-sub": {
     "props": {
-      "text": "Exclusive deals",
-      "blockClass": "deals"
+      "text": "e em até 3 vezes sem juros",
+      "blockClass": "sub__deals"
     }
   }
 }

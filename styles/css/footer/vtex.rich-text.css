@@ -1,0 +1,74 @@
+/* TITLES */
+.paragraph--title__footer {
+  color: #666;
+  font-family: "Istok Web", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* ATENDIMENTO */
+.paragraph--desc__atendimento__footer {
+  color: #666;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+  margin-top: 0 !important;
+}
+
+.paragraph--contact__atendimento__footer {
+  color: #666;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 !important;
+}
+
+.paragraph--email__atendimento__footer {
+  color: #666;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 4px;
+}
+
+.paragraph--hours__atendimento__footer {
+  color: #666;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 12px;
+}
+
+/* COPYRIGHT */
+.paragraph--copyright__footer {
+  color: #666;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  width: 100%;
+}
+
+.link--contact__atendimento__footer {
+  color: #666 !important;
+  text-decoration: none !important;
+}
+
+.container--copyright__footer {
+  justify-content: center !important;
+}

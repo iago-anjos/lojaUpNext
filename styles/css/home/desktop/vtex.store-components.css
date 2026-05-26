@@ -1,0 +1,34 @@
+.imageElement--cat {
+  width: 100%;
+  height: 181px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.imageElement--banner__shelf {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.discountInsideContainer {
+  display: none;
+}
+
+/* ABOUT US */
+.imageElement--model__about {
+  display: block !important;
+  width: 400px !important;
+  height: 600px !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  margin-top: -70px !important;
+}
+
+.imageElement--logo__about {
+  width: 257px !important;
+  height: 81px !important;
+  display: block !important;
+  object-fit: contain !important;
+}

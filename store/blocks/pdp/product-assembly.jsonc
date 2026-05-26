@@ -3,7 +3,9 @@
     "props": {
       "position": "bottom"
     },
-    "children": ["flex-layout.row#buy-button"]
+    "children": [
+      "flex-layout.row#buy-quantity-row"
+    ]
   },
   "product-assembly-options": {
     "children": [

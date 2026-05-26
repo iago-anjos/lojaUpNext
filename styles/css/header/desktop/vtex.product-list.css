@@ -1,0 +1,120 @@
+/* PRODUCT LIST - Minicart items */
+.productListContainer {
+  padding: 0 !important;
+}
+
+.item {
+  display: flex !important;
+  align-items: flex-start !important;
+  padding: 16px 24px !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+  gap: 12px !important;
+}
+
+.imageContainer,
+.productImageAnchor {
+  width: 72px !important;
+  min-width: 72px !important;
+  height: 72px !important;
+  border-radius: 3px !important;
+  overflow: hidden !important;
+  border: 1px solid #e8e8e8 !important;
+}
+
+.productBrand {
+  color: #999 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  margin: 0 0 2px 0 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.productName {
+  color: #333 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.priceContainer {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.price {
+  color: #910e4b !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.sellingPrice {
+  color: #910e4b !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.listPrice {
+  color: #999 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  text-decoration: line-through !important;
+}
+
+/* Quantity selector */
+.quantitySelectorWrapper {
+  margin-top: 8px !important;
+}
+
+.quantitySelectorButton {
+  background: transparent !important;
+  border: 1px solid #ddd !important;
+  color: #333 !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 3px !important;
+  font-size: 14px !important;
+}
+
+.quantitySelectorButton:hover {
+  border-color: #910e4b !important;
+  color: #910e4b !important;
+}
+
+.quantitySelectorInput {
+  color: #333 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  width: 32px !important;
+  text-align: center !important;
+}
+
+/* Remove button */
+.removeButton {
+  background: transparent !important;
+  border: none !important;
+  color: #bbb !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  margin-left: auto !important;
+  transition: color 0.2s ease !important;
+}
+
+.removeButton:hover {
+  color: #910e4b !important;
+}
+
+/* Unit multiplier */
+.unitMultiplier {
+  font-family: "Inter", sans-serif !important;
+  font-size: 12px !important;
+  color: #999 !important;
+}

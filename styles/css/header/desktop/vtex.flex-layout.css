@@ -1,0 +1,49 @@
+.flexRow--wrapper__topbar {
+  background: #591032;
+  height: 36px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.flexRowContent--wrapper__topbar {
+  height: 36px;
+  align-items: center;
+}
+
+.flexCol--whatsapp-col__topbar {
+  flex: 1;
+  padding-left: 24px;
+}
+
+.flexCol--oferta-col__topbar {
+  flex: 0 0 141px;
+  margin-left: auto;
+}
+
+/* NAVBAR */
+.flexRow--main__navbar {
+  background: #910e4b;
+  height: 90px;
+}
+
+.flexRowContent--main__navbar {
+  height: 40px !important;
+  margin-top: 30px !important;
+  align-items: center !important;
+  padding-bottom: 0 !important;
+}
+
+.flexCol--actions-col__navbar {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.flexCol--logo-col__navbar {
+  padding-left: 24px;
+}
+
+.flexRow--menu__navbar {
+  background: #910e4b;
+  margin-top: -1px !important;
+}

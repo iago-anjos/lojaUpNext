@@ -1,0 +1,24 @@
+.link--cat {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.link--cat:hover :global(.vtex-rich-text-0-x-paragraph--label__categories) {
+  color: #910e4b !important;
+}
+
+.link--link__banners-offer {
+  display: block;
+  width: 100%;
+  line-height: 0;
+}
+
+.link--link__banners-season {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  position: relative;
+}

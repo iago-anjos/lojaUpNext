@@ -1,0 +1,28 @@
+/* CHECKOUT SUMMARY - Total area in minicart footer */
+.summaryContainer {
+  width: 100% !important;
+}
+
+.totalLabel,
+.totalText {
+  color: #333 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.totalValue,
+.totalPrice {
+  color: #591032 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+.installmentsLabel,
+.installments {
+  color: #999 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}

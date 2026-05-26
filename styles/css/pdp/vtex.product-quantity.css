@@ -1,0 +1,47 @@
+.quantitySelectorTitle--pdp {
+  display: none;
+}
+
+.quantitySelectorContainer--pdp {
+  height: 41px;
+  width: 96px;
+  max-width: 96px;
+  margin: 0;
+}
+
+.quantitySelectorStepper--pdp {
+  height: 41px;
+  font-weight: 600;
+}
+
+.quantitySelectorStepper--pdp :global(.vtex-numeric-stepper__minus-button) {
+  width: 28px !important;
+  min-width: 28px !important;
+  max-width: 28px !important;
+  box-sizing: border-box !important;
+  border-right: none !important;
+  border-radius: 3px 0 0 3px !important;
+  background: #fff !important;
+  color: #333 !important;
+}
+
+.quantitySelectorStepper--pdp :global(.vtex-numeric-stepper__plus-button) {
+  width: 28px !important;
+  min-width: 28px !important;
+  max-width: 28px !important;
+  box-sizing: border-box !important;
+  border-left: none !important;
+  border-radius: 0 3px 3px 0 !important;
+  background: #fff !important;
+  color: #333 !important;
+}
+
+.quantitySelectorStepper--pdp :global(.vtex-numeric-stepper__input) {
+  width: 40px !important;
+  min-width: 40px !important;
+  max-width: 40px !important;
+  box-sizing: border-box !important;
+  border-left: none !important;
+  border-right: none !important;
+  text-align: center !important;
+}

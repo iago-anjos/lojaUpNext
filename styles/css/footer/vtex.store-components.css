@@ -1,0 +1,28 @@
+.imageElement--social__footer {
+  width: 52px !important;
+  height: 52px !important;
+  object-fit: contain !important;
+  border-radius: 12px !important;
+}
+
+.imageElement--icon__atendimento__footer {
+  width: 20px !important;
+  height: 20px !important;
+  object-fit: contain !important;
+}
+
+.imageElement--selo__footer {
+  object-fit: contain !important;
+}
+
+.imageElement--google__selos__footer {
+  margin-top: 8px !important;
+  object-fit: contain !important;
+}
+
+.imageElement--logo__footer {
+  width: 99px !important;
+  height: 30px !important;
+  object-fit: contain !important;
+  filter: brightness(0.4) !important;
+}
