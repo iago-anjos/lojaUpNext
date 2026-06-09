@@ -1,0 +1,97 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+  /* MAIN: coluna, overrides regra nativa de 640px */
+  .flexRow--main__footer :global(.vtex-flex-layout-0-x-flexRowContent--main__footer) {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    align-items: stretch !important;
+  }
+
+  /* Override inline style "width: 25%" injetado pelo VTEX no layout desktop */
+  .flexRowContent--main__footer .stretchChildrenWidth {
+    width: 100% !important;
+  }
+
+  /* Linhas de ícone+texto do Atendimento: restaura width auto
+     (a regra acima é muito ampla e afeta os wrappers das linhas filhas) */
+  .flexRowContent--contact__atendimento__footer .stretchChildrenWidth {
+    width: auto !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* Cada seção: linha separadora, 340px alinhado à esquerda */
+  .flexCol--institucional__footer,
+  .flexCol--social__footer,
+  .flexCol--atendimento__footer {
+    border-bottom: 1px solid #cdcdcd !important;
+    padding: 16px 0 !important;
+    width: 340px !important;
+    flex-shrink: 0 !important;
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+  }
+
+  .flexCol--selos__footer {
+    padding: 16px 0 !important;
+    width: 340px !important;
+    flex-shrink: 0 !important;
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+    align-items: flex-start !important;
+  }
+
+  /* SOCIAL ICONS: lado a lado com espaço entre eles */
+  .flexRowContent--icons__social__footer
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    padding: 0 !important;
+    margin-right: 12px !important;
+  }
+
+  /* SELOS: lado a lado, alinhados à esquerda */
+  .flexRowContent--top__selos__footer
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    margin-right: 16px !important;
+  }
+
+  /* PAYMENT: centralizado */
+  .flexRowContent--payment__footer {
+    padding: 8px 16px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  /* COPYRIGHT: coluna centralizada */
+  .flexRow--copyright__footer
+    :global(.vtex-flex-layout-0-x-flexRowContent--copyright__footer) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 12px 16px !important;
+    gap: 8px !important;
+  }
+
+  .flexRowContent--copyright__footer
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    position: static !important;
+    right: auto !important;
+    width: auto !important;
+  }
+
+  .flexRowContent--copyright__footer
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    flex: 0 0 auto !important;
+    width: auto !important;
+  }
+}

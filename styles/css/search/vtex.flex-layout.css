@@ -1,3 +1,8 @@
+/* ─────────────────────────────────────────────
+   Search — Flex Layout
+   ───────────────────────────────────────────── */
+
+/* List layout — legado (mantido) */
 .flexRow--orderByAndSwitcher {
   padding-right: 1.5em;
 }
@@ -12,13 +17,13 @@
 
 .flexRow--buyNowButton :global(.vtex-button) {
   background: #eef3f7;
-  border-color:#eef3f7;
+  border-color: #eef3f7;
   color: #0f3e99;
 }
 
 .flexRow--buyNowButton:hover :global(.vtex-button) {
   background: #dbe9fd;
-  border-color:#dbe9fd;
+  border-color: #dbe9fd;
 }
 
 .flexCol--productRating {
@@ -30,5 +35,45 @@
 }
 
 .flexCol--summaryUpDetailsListMobile {
-  margin-bottom: 0.25rem
+  margin-bottom: 0.25rem;
+}
+
+/* ─────────────────────────────────────────────
+   Desktop — Sidebar de filtros
+   ───────────────────────────────────────────── */
+
+.flexCol--filterCol {
+  width: 244px !important;
+  min-width: 244px !important;
+  flex-shrink: 0 !important;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+/* ─────────────────────────────────────────────
+   Desktop — Barra sort / total produtos
+   ───────────────────────────────────────────── */
+
+.flexRowContent--searchInfo {
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.flexCol--productCountCol {
+  align-self: center;
+}
+
+/* ─────────────────────────────────────────────
+   Mobile — Linha de filtro + sort
+   ───────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .flexCol--filterMobileCol,
+  .flexCol--orderByMobileCol {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    min-width: 0 !important;
+  }
 }

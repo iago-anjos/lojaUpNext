@@ -1,0 +1,18 @@
+/* ─── Hamburger (drawer) — mobile ──────────────────────── */
+
+/* Container do icone — alinhado a esquerda */
+.openIconContainer {
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+/* Icone hamburguer 31x31 com cor da marca escura */
+.menuIcon {
+  width: 31px !important;
+  height: 31px !important;
+  color: #61163A !important;
+  fill: #61163A !important;
+  stroke: #61163A !important;
+}

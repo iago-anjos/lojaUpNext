@@ -1,0 +1,47 @@
+{
+  "store.custom#como-comprar": {
+    "children": [
+      "flex-layout.row#institutional-como-comprar",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "flex-layout.row#institutional-como-comprar": {
+    "props": {
+      "blockClass": "institutional",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#institutional-como-comprar"
+    ]
+  },
+
+  "flex-layout.col#institutional-como-comprar": {
+    "children": [
+      "rich-text#como-comprar-title",
+      "rich-text#como-comprar-intro",
+      "rich-text#como-comprar-content"
+    ]
+  },
+
+  "rich-text#como-comprar-title": {
+    "props": {
+      "text": "## Como Comprar",
+      "blockClass": "institutionalTitle"
+    }
+  },
+
+  "rich-text#como-comprar-intro": {
+    "props": {
+      "text": "Comprar na UpNext é simples, rápido e seguro. Siga o passo a passo abaixo.",
+      "blockClass": "institutionalUpdated"
+    }
+  },
+
+  "rich-text#como-comprar-content": {
+    "props": {
+      "text": "### Passo 1 — Encontre seu produto\n\nUtilize a **barra de busca** no topo do site ou navegue pelas categorias do menu. Filtros e ordenação ajudam a refinar os resultados.\n\n### Passo 2 — Adicione ao carrinho\n\nNa página do produto, selecione tamanho/cor (quando aplicável), escolha a quantidade e clique em **Comprar**.\n\n### Passo 3 — Confira o carrinho\n\nClique no ícone da sacola (canto superior direito) para revisar os itens. É possível ajustar quantidades ou remover produtos.\n\n### Passo 4 — Informe o CEP\n\nDigite seu CEP para visualizar prazo de entrega e valor do frete (grátis acima de R$ 199,00).\n\n### Passo 5 — Faça login ou cadastre-se\n\nCom uma conta, suas compras ficam registradas em **Meus Pedidos** e o cadastro fica mais ágil para próximas compras.\n\n### Passo 6 — Endereço de entrega\n\nConfirme ou cadastre o endereço onde deseja receber. Você pode salvar múltiplos endereços.\n\n### Passo 7 — Escolha o pagamento\n\nAceitamos:\n\n- **Cartão de crédito** (até 12x sem juros em compras selecionadas)\n- **Cartão de débito**\n- **Pix** (aprovação imediata)\n- **Boleto bancário** (compensação em até 3 dias úteis)\n\n### Passo 8 — Finalize a compra\n\nRevise tudo e clique em **Finalizar pedido**. Você receberá um e-mail de confirmação com os detalhes.\n\n### Passo 9 — Acompanhe seu pedido\n\nAssim que despacharmos, você receberá o código de rastreamento. Acompanhe em **Meus Pedidos**.\n\n### Dúvidas?\n\nNossa equipe está pronta para ajudar:\n\n- **WhatsApp**: (11) 99999-9999\n- **E-mail**: sac@email.com.br\n- **Telefone**: (11) 3333-3333",
+      "blockClass": "institutionalContent"
+    }
+  }
+}

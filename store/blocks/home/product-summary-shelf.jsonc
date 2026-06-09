@@ -37,7 +37,8 @@
   },
   "product-installments#shelf": {
     "props": {
-      "blockClass": "shelf"
+      "blockClass": "shelf",
+      "message": "{installmentsNumber}x de {installmentValue}"
     }
   },
   "flex-layout.row#shelf-buy-area": {
@@ -74,7 +75,8 @@
     "props": {
       "blockClass": "shelf",
       "showToast": false,
-      "text": "Comprar"
+      "text": "Comprar",
+      "unavailableText": "Esgotado"
     }
   }
 }

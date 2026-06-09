@@ -40,3 +40,24 @@
 .image {
   border-radius: 0.25rem;
 }
+
+/* Mobile: cards fluidos dentro do grid de 2 colunas */
+@media (max-width: 767px) {
+  .containerNormal {
+    width: 100% !important;
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  .imageWrapper {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .image--shelf {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+}

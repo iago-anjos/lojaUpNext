@@ -36,6 +36,13 @@
   margin-top: 16px !important;
 }
 
+/* Mobile: texto colado no icone */
+@media (max-width: 767px) {
+  .openIconContainer::after {
+    margin-top: 2px !important;
+  }
+}
+
 .openIconContainer :global(.vtex-button):hover,
 .openIconContainer :global(.vtex-button):focus,
 .openIconContainer :global(.vtex-button):active {

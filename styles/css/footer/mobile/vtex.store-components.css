@@ -1,0 +1,8 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+  /* Esconde o selo Google Safe Browsing no mobile */
+  .imageElement--google__selos__footer {
+    display: none !important;
+  }
+}

@@ -57,3 +57,45 @@
   font-weight: 400 !important;
   text-align: center !important;
 }
+
+/* ≤1200px: input e botão reduzidos */
+@media (max-width: 1200px) {
+  .inputGroup--newsletter :global(.vtex-input-prefix__group) {
+    width: 220px !important;
+  }
+  .buttonContainer--newsletter :global(.vtex-button) {
+    width: 160px !important;
+    font-size: 15px !important;
+  }
+}
+
+/* ≤1024px: mesmos tamanhos reduzidos */
+@media (max-width: 1024px) {
+  .inputGroup--newsletter :global(.vtex-input-prefix__group) {
+    width: 220px !important;
+  }
+  .buttonContainer--newsletter :global(.vtex-button) {
+    width: 160px !important;
+    font-size: 15px !important;
+  }
+}
+
+/* ≤960px: form centralizado em coluna */
+@media (max-width: 960px) {
+  .form--newsletter {
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+  }
+  .inputGroup--newsletter {
+    justify-content: center !important;
+  }
+  .inputGroup--newsletter :global(.vtex-input-prefix__group) {
+    width: 240px !important;
+  }
+  .buttonContainer--newsletter :global(.vtex-button) {
+    width: 140px !important;
+    font-size: 14px !important;
+  }
+}

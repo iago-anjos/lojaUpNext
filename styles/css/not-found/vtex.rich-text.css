@@ -1,0 +1,96 @@
+/* 404 image */
+.image--not-found-image {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Title: Oh, não! */
+.heading--not-found-title {
+  color: #2c2d30;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Subtitle + bullet list */
+.paragraph--not-found-body {
+  color: #555;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.list--not-found-body {
+  color: #555;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  padding-left: 16px;
+  margin-bottom: 0;
+}
+
+.listItem--not-found-body {
+  color: #555;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.container--not-found-body {
+  margin-bottom: 20px;
+}
+
+/* Ir para página inicial */
+.link--not-found-link {
+  color: #910e4b;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container--not-found-link {
+  margin-bottom: 28px;
+}
+
+/* Precisa de ajuda? */
+.bold--not-found-help {
+  color: #2c2d30;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.paragraph--not-found-help {
+  color: #555;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.container--not-found-help {
+  margin-bottom: 16px;
+}
+
+/* WhatsApp button */
+.link--not-found-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25d366;
+  color: #fff !important;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.image--not-found-whatsapp {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}

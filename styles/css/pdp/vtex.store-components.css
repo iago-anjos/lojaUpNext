@@ -1,3 +1,8 @@
+/* Hide "Compartilhar" text, keep icons */
+.shareLabel {
+  display: none;
+}
+
 /* Product Name */
 .productBrand--pdp {
   color: #2c2d30;
@@ -55,10 +60,26 @@
   line-height: 149.26%;
 }
 
-/* Product Images */
-.productImagesGalerySlider {
-  max-height: 400px !important;
-  max-width: 400px !important;
+/* Product Images — handles reais confirmados via DevTools */
+.productImagesContainer {
+  height: 400px !important;
+  align-items: flex-start !important;
+}
+
+.productImagesGallerySwiperContainer {
+  width: 400px !important;
+  height: 450px !important;
+}
+
+.productImagesGallerySlide {
+  width: 450px !important;
+  height: 450px !important;
+}
+
+.productImageTag {
+  width: 450px !important;
+  height: 450px !important;
+  object-fit: contain !important;
 }
 
 .skuSelectorContainer--pdp {
@@ -147,7 +168,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
 
 .shippingContainer :global(.vtex__icon-external-link) {
   display: none;

@@ -1,4 +1,5 @@
 {
+  // ── Desktop: 2 banners lado a lado (original — não alterar) ──
   "flex-layout.row#banners-offer": {
     "props": {
       "blockClass": "banners-offer",
@@ -47,6 +48,54 @@
       "alt": "25% OFF - Conferir",
       "maxWidth": "100%",
       "blockClass": "img__banners-offer"
+    }
+  },
+
+  // ── Mobile: slider rotativo com bullets (≤1024px) ────────────
+  "flex-layout.row#banners-offer-mobile": {
+    "props": {
+      "blockClass": "banners-offer-mobile",
+      "fullWidth": true
+    },
+    "children": ["slider-layout#banners-offer-mobile"]
+  },
+
+  "slider-layout#banners-offer-mobile": {
+    "props": {
+      "blockClass": "banners-offer-mobile",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      "image#banner-30off-slide",
+      "image#banner-25off-slide"
+    ]
+  },
+
+  "image#banner-30off-slide": {
+    "props": {
+      "src": "assets/images/banner-30off.png",
+      "alt": "30% OFF - Conferir",
+      "maxWidth": "100%",
+      "blockClass": "img__banners-offer-mobile"
+    }
+  },
+  "image#banner-25off-slide": {
+    "props": {
+      "src": "assets/images/banner-25off.png",
+      "alt": "25% OFF - Conferir",
+      "maxWidth": "100%",
+      "blockClass": "img__banners-offer-mobile"
     }
   }
 }

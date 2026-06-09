@@ -1,0 +1,47 @@
+{
+  "store.custom#trocas": {
+    "children": [
+      "flex-layout.row#institutional-trocas",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "flex-layout.row#institutional-trocas": {
+    "props": {
+      "blockClass": "institutional",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#institutional-trocas"
+    ]
+  },
+
+  "flex-layout.col#institutional-trocas": {
+    "children": [
+      "rich-text#trocas-title",
+      "rich-text#trocas-updated",
+      "rich-text#trocas-content"
+    ]
+  },
+
+  "rich-text#trocas-title": {
+    "props": {
+      "text": "## Trocas e Devoluções",
+      "blockClass": "institutionalTitle"
+    }
+  },
+
+  "rich-text#trocas-updated": {
+    "props": {
+      "text": "*Última atualização: Maio de 2026*",
+      "blockClass": "institutionalUpdated"
+    }
+  },
+
+  "rich-text#trocas-content": {
+    "props": {
+      "text": "### 1. Direito de arrependimento\n\nConforme o **Código de Defesa do Consumidor (CDC, art. 49)**, você tem **7 dias corridos** a partir do recebimento para desistir da compra, sem necessidade de justificativa.\n\n### 2. Produtos com defeito\n\nProdutos com defeito de fabricação podem ser trocados em até **90 dias** (bens não duráveis) ou **30 dias** após constatação do defeito.\n\n### 3. Como solicitar troca/devolução\n\n1. Acesse **Meus Pedidos** ou entre em contato pelo SAC\n2. Informe o número do pedido e o motivo\n3. Aguarde nossa autorização e o código de postagem\n4. Embale o produto na embalagem original com todos os acessórios\n5. Despache pelos Correios usando o código fornecido\n6. Após recebermos e conferirmos, processamos o reembolso ou troca\n\n### 4. Condições do produto\n\nO produto deve estar:\n\n- Sem uso ou com sinais mínimos de uso (apenas para testes)\n- Na embalagem original\n- Com todos os acessórios e manuais\n- Com a nota fiscal\n\n### 5. Formas de reembolso\n\n- **Cartão de crédito**: estorno na fatura (até 2 ciclos)\n- **Pix/Boleto**: depósito em conta\n- **Crédito na loja**: opção mais rápida, disponível em até 48h\n\n### 6. Prazo de análise\n\nApós o recebimento, analisamos o produto em até **5 dias úteis** e confirmamos o reembolso ou despacho da troca.\n\n### 7. Frete da devolução\n\nO frete é por nossa conta quando:\n\n- O produto apresenta defeito\n- Houve erro no envio (produto errado, danificado)\n\nNo caso de arrependimento sem defeito, o frete da devolução pode ser cobrado.\n\n### 8. Contato\n\n**SAC**: sac@email.com.br | **WhatsApp**: (11) 99999-9999",
+      "blockClass": "institutionalContent"
+    }
+  }
+}

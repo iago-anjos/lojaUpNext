@@ -1,0 +1,97 @@
+/* ─────────────────────────────────────────────
+   Paginas Institucionais — Rich Text
+   ───────────────────────────────────────────── */
+
+/* Titulo da pagina (## h2) */
+.heading--institutionalTitle {
+  color: #910e4b;
+  font-family: "Istok Web", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+/* Subtitulo "Ultima atualizacao" */
+.paragraph--institutionalUpdated,
+.italic--institutionalUpdated {
+  font-family: "Istok Web", sans-serif;
+  font-size: 14px;
+  color: #727273;
+  margin: 0 0 40px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Conteudo principal: container */
+.wrapper--institutionalContent {
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+  color: #3f3f40;
+  line-height: 1.75;
+}
+
+/* H3 das secoes (### Titulo) */
+.heading--institutionalContent {
+  color: #910e4b;
+  font-family: "Istok Web", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 32px 0 12px;
+  line-height: 1.3;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f0c2d4;
+}
+
+/* Paragrafo dentro do conteudo */
+.paragraph--institutionalContent {
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+  color: #3f3f40;
+  line-height: 1.75;
+  margin: 0 0 14px;
+}
+
+/* Listas */
+.list--institutionalContent {
+  margin: 12px 0 16px;
+  padding-left: 24px;
+}
+
+.listItem--institutionalContent {
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+  color: #3f3f40;
+  line-height: 1.8;
+  padding: 2px 0;
+}
+
+/* Negrito dentro do conteudo */
+.bold--institutionalContent {
+  color: #2C2D30;
+  font-weight: 700;
+}
+
+/* Tablet — 768-1023px */
+@media (max-width: 1023px) {
+  .heading--institutionalTitle {
+    font-size: 30px;
+  }
+}
+
+/* Mobile — 320-767px */
+@media (max-width: 767px) {
+  .heading--institutionalTitle {
+    font-size: 26px;
+  }
+
+  .heading--institutionalContent {
+    font-size: 18px;
+    margin: 28px 0 10px;
+  }
+
+  .paragraph--institutionalContent,
+  .listItem--institutionalContent {
+    font-size: 14px;
+  }
+}

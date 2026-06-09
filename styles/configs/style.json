@@ -80,7 +80,7 @@
     "background": {
       "base": "#ffffff",
       "base--inverted": "#03044e",
-      "action-primary": "#1FAF38",
+      "action-primary": "#910e4b",
       "action-secondary": "#eef3f7",
       "emphasis": "#f71963",
       "disabled": "#f2f4f5",
@@ -97,7 +97,7 @@
       "muted-5": "#f2f4f5"
     },
     "hover-background": {
-      "action-primary": "#18962F",
+      "action-primary": "#7a0c3f",
       "action-secondary": "#dbe9fd",
       "emphasis": "#dd1659",
       "success": "#8bc34a",
@@ -113,7 +113,7 @@
       "muted-5": "#f2f4f5"
     },
     "active-background": {
-      "action-primary": "#18962F",
+      "action-primary": "#7a0c3f",
       "action-secondary": "#d2defc",
       "emphasis": "#dd1659",
       "success": "#8bc34a",
@@ -131,7 +131,7 @@
     "text": {
       "action-primary": "#1FAF38",
       "action-secondary": "#eef3f7",
-      "link": "#0F3E99",
+      "link": "#910e4b",
       "emphasis": "#f71963",
       "disabled": "#979899",
       "success": "#8bc34a",
@@ -147,12 +147,12 @@
       "muted-5": "#f2f4f5"
     },
     "visited-text": {
-      "link": "#0c389f"
+      "link": "#591032"
     },
     "hover-text": {
-      "action-primary": "#18962F",
+      "action-primary": "#7a0c3f",
       "action-secondary": "#dbe9fd",
-      "link": "#0c389f",
+      "link": "#7a0c3f",
       "emphasis": "#dd1659",
       "success": "#8bc34a",
       "success--faded": "#eafce3",
@@ -162,7 +162,7 @@
       "warning--faded": "#fff6e0"
     },
     "active-text": {
-      "link": "#0c389f",
+      "link": "#591032",
       "emphasis": "#dd1659",
       "success": "#8bc34a",
       "success--faded": "#eafce3",
@@ -324,84 +324,84 @@
     ],
     "styles": {
       "heading-1": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "700",
         "fontSize": "3rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-2": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "700",
         "fontSize": "2.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-3": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "700",
         "fontSize": "1.75rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-4": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "normal",
         "fontSize": "1.5rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-5": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "normal",
         "fontSize": "1.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-6": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "normal",
         "fontSize": "1.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "body": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "normal",
         "fontSize": "1rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "small": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "normal",
         "fontSize": "0.875rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "mini": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "normal",
         "fontSize": "0.75rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "action": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "500",
         "fontSize": "1rem",
         "textTransform": "uppercase",
         "letterSpacing": "0"
       },
       "action--small": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "500",
         "fontSize": "0.875rem",
         "textTransform": "uppercase",
         "letterSpacing": "0"
       },
       "action--large": {
-        "fontFamily": "Montserrat, sans-serif",
+        "fontFamily": "Inter, sans-serif",
         "fontWeight": "500",
         "fontSize": "1.25rem",
         "textTransform": "uppercase",

@@ -1,0 +1,23 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+  /* Quantity stepper preenche os 161px da coluna addtocart */
+  .quantitySelectorContainer--shelf {
+    width: 161px !important;
+    max-width: 161px !important;
+    height: 41px !important;
+  }
+
+  .quantitySelectorStepper--shelf {
+    width: 161px !important;
+    max-width: 161px !important;
+    height: 41px !important;
+  }
+
+  /* Input cresce para preencher: 28 + 105 + 28 = 161px */
+  .quantitySelectorStepper--shelf :global(.vtex-numeric-stepper__input) {
+    width: 105px !important;
+    min-width: 105px !important;
+    max-width: 105px !important;
+  }
+}

@@ -1,13 +1,13 @@
 .logoContainer--navbar {
   padding: 0;
-  width: 169px;
-  height: 51px;
+  width: clamp(130px, calc(9.38vw + 33.93px), 169px);
+  height: auto;
 }
 
 .searchBarContainer {
   padding: 0 !important;
-  width: 465px !important;
-  max-width: 465px !important;
+  width: clamp(300px, calc(39.66vw - 106.11px), 465px) !important;
+  max-width: clamp(300px, calc(39.66vw - 106.11px), 465px) !important;
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group) {
@@ -38,4 +38,51 @@
 
 .searchBarIcon {
   color: #c80d65 !important;
+}
+
+/* ── TABLET (641–1024px via responsive-layout) ──────────── */
+@media (max-width: 1024px) {
+  .searchBarContainer {
+    width: clamp(300px, 42vw, 465px) !important;
+    max-width: clamp(300px, 42vw, 465px) !important;
+  }
+}
+
+/* ── MOBILE ─────────────────────────────────────────────── */
+.logoContainer--mobile {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  padding: 0 !important;
+  width: 114px !important;
+  height: auto !important;
+}
+
+.searchBarContainer--mobile {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* Mobile (<768px): override do clamp do desktop para fixar 340px */
+@media (max-width: 767px) {
+  .searchBarContainer {
+    width: 340px !important;
+    max-width: 340px !important;
+    min-width: 340px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Logo mobile — garantir altura exata Figma */
+.logoLink--mobile {
+  display: inline-flex !important;
+  align-items: center !important;
+  height: 34.417px !important;
+}
+
+.logoImage--mobile {
+  width: 114px !important;
+  height: 34.417px !important;
+  display: block !important;
 }

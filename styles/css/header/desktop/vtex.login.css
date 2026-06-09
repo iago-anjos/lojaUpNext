@@ -28,6 +28,7 @@
 }
 
 .label {
+  display: block !important;
   color: #fff !important;
   font-family: "Inter", sans-serif !important;
   font-size: 12px !important;

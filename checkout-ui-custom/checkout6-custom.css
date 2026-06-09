@@ -1,0 +1,128 @@
+/*
+  Checkout UpNext — checkout6-custom.css
+  ────────────────────────────────────────────────────────────────────────
+  COMO APLICAR:
+  1. Acesse o Admin VTEX: https://iagoupnext.myvtex.com/admin/checkout/
+  2. Clique na engrenagem ⚙ ao lado do site
+  3. Acesse a aba "Code"
+  4. Abra o arquivo "checkout6-custom.css"
+  5. Cole o conteúdo deste arquivo e salve
+  ────────────────────────────────────────────────────────────────────────
+*/
+
+/* ── Fonte base ── */
+body,
+.container-fluid {
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* ── Botão principal (finalizar compra, continuar) ── */
+.btn-success,
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: #910e4b !important;
+  border-color: #910e4b !important;
+  color: #ffffff !important;
+  border-radius: 3px !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.btn-success:hover {
+  background-color: #7a0c3f !important;
+  border-color: #7a0c3f !important;
+}
+
+/* ── Links e textos de destaque ── */
+a,
+.link-color-dark {
+  color: #910e4b !important;
+}
+
+a:hover {
+  color: #7a0c3f !important;
+}
+
+/* ── Steps (etapas do checkout) ── */
+.step-active .step-number,
+.step-completed .step-number {
+  background-color: #910e4b !important;
+  border-color: #910e4b !important;
+}
+
+/* ── Campos de formulário ── */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  border: 1px solid #D9D9D9 !important;
+  border-radius: 3px !important;
+  color: #3f3f40 !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  border-color: #910e4b !important;
+  box-shadow: 0 0 0 2px rgba(145, 14, 75, 0.15) !important;
+  outline: none !important;
+}
+
+/* ── Total e resumo do pedido ── */
+.cart-more-options .cart-coupon-add {
+  color: #910e4b !important;
+}
+
+.shipping-summary-title,
+.cart-template .cart-items .quantity-tag {
+  color: #3f3f40;
+}
+
+/* ── Resumo — Total em destaque ── */
+.cart-template .cart-summary-item-price .cart-price {
+  color: #591032 !important;
+  font-weight: 700;
+}
+
+/* ── Seleção de frete ── */
+.shipping-option-label:hover,
+.sla-group.active .shipping-option-label {
+  border-color: #910e4b !important;
+}
+
+/* ── Checkbox e radio ── */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #910e4b;
+}
+
+/* ── Mensagens de sucesso ── */
+.alert-success {
+  background-color: rgba(31, 175, 56, 0.1) !important;
+  border-color: #1faf38 !important;
+  color: #1a6b2a !important;
+}
+
+/* ── Confirmação de pedido ── */
+.cconf-alert {
+  border-color: #910e4b !important;
+  background: linear-gradient(135deg, #910e4b 0%, #591032 100%) !important;
+  color: #ffffff !important;
+  border-radius: 3px !important;
+}
+
+.cconf-continue-button {
+  background-color: #910e4b !important;
+  border-color: #910e4b !important;
+  color: #ffffff !important;
+  border-radius: 3px !important;
+}
+
+.cconf-continue-button:hover {
+  background-color: #7a0c3f !important;
+  border-color: #7a0c3f !important;
+}

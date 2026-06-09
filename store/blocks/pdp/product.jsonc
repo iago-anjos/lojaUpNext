@@ -4,9 +4,8 @@
       "condition-layout.product#availability",
       "flex-layout.row#description",
       "flex-layout.row#share",
-      "flex-layout.row#specifications-title",
       "product-specification-group#table",
-      "shelf.relatedProducts",
+      "flex-layout.row#related-shelf",
       "flex-layout.row#newsletter",
       "product-questions-and-answers"
     ]
@@ -234,5 +233,15 @@
         "Pinterest": true
       }
     }
+  },
+  "flex-layout.row#related-shelf": {
+    "props": {
+      "blockClass": "related-shelf",
+      "marginTop": 7,
+      "marginBottom": 7
+    },
+    "children": [
+      "shelf.relatedProducts"
+    ]
   }
 }

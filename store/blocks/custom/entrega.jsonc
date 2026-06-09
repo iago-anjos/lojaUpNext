@@ -1,0 +1,47 @@
+{
+  "store.custom#entrega": {
+    "children": [
+      "flex-layout.row#institutional-entrega",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "flex-layout.row#institutional-entrega": {
+    "props": {
+      "blockClass": "institutional",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#institutional-entrega"
+    ]
+  },
+
+  "flex-layout.col#institutional-entrega": {
+    "children": [
+      "rich-text#entrega-title",
+      "rich-text#entrega-updated",
+      "rich-text#entrega-content"
+    ]
+  },
+
+  "rich-text#entrega-title": {
+    "props": {
+      "text": "## Política de Entrega",
+      "blockClass": "institutionalTitle"
+    }
+  },
+
+  "rich-text#entrega-updated": {
+    "props": {
+      "text": "*Última atualização: Maio de 2026*",
+      "blockClass": "institutionalUpdated"
+    }
+  },
+
+  "rich-text#entrega-content": {
+    "props": {
+      "text": "### 1. Prazos de envio\n\nApós a confirmação do pagamento (até 2 dias úteis para boleto, imediato para Pix e cartão), seu pedido é separado e despachado em **até 2 dias úteis**.\n\n### 2. Prazos de entrega\n\nO prazo varia conforme sua região e a modalidade escolhida no checkout:\n\n- **Capitais e regiões metropolitanas**: 2 a 5 dias úteis\n- **Demais cidades**: 5 a 10 dias úteis\n- **Regiões remotas**: 10 a 15 dias úteis\n\nO prazo exato é exibido no carrinho após inserir seu CEP.\n\n### 3. Frete grátis\n\nOferecemos frete grátis para compras acima de **R$ 199,00** em todo o Brasil*.\n\n*Exceções podem ocorrer em regiões remotas — verifique no checkout.\n\n### 4. Rastreamento\n\nApós o despacho, você recebe um e-mail com o **código de rastreamento**. Acompanhe pelo site dos Correios ou pelo nosso painel em **Meus Pedidos**.\n\n### 5. Tentativas de entrega\n\nSerão feitas até **3 tentativas** de entrega. Não havendo sucesso, o pedido retorna para nosso centro de distribuição e entraremos em contato para reagendamento.\n\n### 6. Endereço incorreto\n\nÉ responsabilidade do cliente fornecer o endereço correto. Em caso de erro após o despacho, taxas adicionais de reenvio podem ser cobradas.\n\n### 7. Dúvidas?\n\nEntre em contato pelo WhatsApp **(11) 99999-9999** ou pelo e-mail **sac@email.com.br**.",
+      "blockClass": "institutionalContent"
+    }
+  }
+}

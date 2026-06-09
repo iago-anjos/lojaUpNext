@@ -1,0 +1,97 @@
+/* ─────────────────────────────────────────────
+   Sobre Nos — Rich Text
+   ───────────────────────────────────────────── */
+
+/* HERO: titulo principal */
+.heading--aboutTitle {
+  color: #ffffff !important;
+  font-family: "Istok Web", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+/* HERO: subtitulo */
+.bold--aboutSubtitle,
+.paragraph--aboutSubtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Istok Web", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* MISSAO: titulos de secao com borda */
+.heading--aboutSectionTitle {
+  color: #910e4b;
+  font-family: "Istok Web", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #910e4b;
+}
+
+/* MISSAO: textos */
+.paragraph--aboutText,
+.wrapper--aboutText {
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+  color: #3f3f40;
+  line-height: 1.75;
+  margin: 0 0 12px;
+}
+
+.list--aboutText {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.listItem--aboutText {
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+  color: #3f3f40;
+  line-height: 1.85;
+  padding: 4px 0;
+}
+
+/* CTA */
+.bold--aboutCtaText,
+.paragraph--aboutCtaText {
+  font-family: "Istok Web", sans-serif;
+  font-size: 20px;
+  color: #3f3f40;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Tablet — 768-1023px */
+@media (max-width: 1023px) {
+  .heading--aboutTitle {
+    font-size: 40px;
+  }
+}
+
+/* Mobile — 320-767px */
+@media (max-width: 767px) {
+  .heading--aboutTitle {
+    font-size: 30px !important;
+  }
+
+  .bold--aboutSubtitle,
+  .paragraph--aboutSubtitle {
+    font-size: 15px;
+  }
+
+  .heading--aboutSectionTitle {
+    font-size: 20px;
+  }
+
+  .bold--aboutCtaText,
+  .paragraph--aboutCtaText {
+    font-size: 16px;
+  }
+}

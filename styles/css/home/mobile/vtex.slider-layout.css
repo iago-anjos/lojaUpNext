@@ -1,0 +1,109 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+  /* Remove padding padrão de 50px das setas — slides usam largura total:
+     348px (container) ÷ 2 (phone:2) = 174px por slide */
+  .sliderLayoutContainer--shelf {
+    overflow: visible !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Gap entre os 2 cards: 4px cada lado = 8px total */
+  .slide--shelf {
+    padding: 0 4px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ── PRODUCT CARD ─────────────────────────────────── */
+
+  /* Altura fixa: todos os cards iguais */
+  .slideChildrenContainer--shelf {
+    height: 430px !important;
+  }
+
+  /* Card preenche 100% da altura do slideChildrenContainer */
+  .slideChildrenContainer--shelf
+    :global(.vtex-product-summary-2-x-containerNormal) {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: unset !important;
+    height: 100% !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Imagem: 162×163px */
+  .slideChildrenContainer--shelf
+    :global(.vtex-product-summary-2-x-imageWrapper) {
+    width: 162px !important;
+    height: 163px !important;
+    overflow: hidden !important;
+    flex-shrink: 0 !important;
+  }
+
+  .slideChildrenContainer--shelf
+    :global(.vtex-product-summary-2-x-imageStackContainer) {
+    width: 162px !important;
+    height: 163px !important;
+    overflow: hidden !important;
+  }
+
+  .slideChildrenContainer--shelf
+    :global(.vtex-product-summary-2-x-image) {
+    width: 162px !important;
+    height: 163px !important;
+    object-fit: cover !important;
+    aspect-ratio: unset !important;
+  }
+
+  /* Nome: max 2 linhas, altura consistente entre cards */
+  .slideChildrenContainer--shelf
+    :global(.vtex-product-summary-2-x-nameContainer) {
+    min-height: 42px !important;
+    max-height: 42px !important;
+    overflow: hidden !important;
+    padding-bottom: 4px !important;
+    margin-top: 8px !important;
+  }
+
+  .slideChildrenContainer--shelf
+    :global(.vtex-product-summary-2-x-brandName) {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Botão comprar: 161×41px (largura via flexColChild no flex-layout) */
+  .slideChildrenContainer--shelf
+    :global(.vtex-add-to-cart-button-0-x-button--shelf) {
+    height: 41px !important;
+    min-height: unset !important;
+  }
+
+  /* ── SETAS ────────────────────────────────────────── */
+
+  /* Mais próximas das laterais */
+  .sliderLeftArrow--shelf {
+    margin-left: 0 !important;
+  }
+
+  .sliderRightArrow--shelf {
+    margin-right: 0 !important;
+  }
+
+  /* Botão da seta: menor mas ícone maior = parece mais grosso */
+  .sliderArrows--shelf {
+    width: 30px !important;
+    height: 30px !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .caretIcon--shelf {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

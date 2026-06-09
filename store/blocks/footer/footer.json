@@ -64,7 +64,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/atendimento",
+        "href": "/contact-us",
         "noFollow": false,
         "tagTitle": "Atendimento",
         "text": "Atendimento"
@@ -79,7 +79,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/quem-somos",
+        "href": "/about-us",
         "noFollow": false,
         "tagTitle": "Quem somos",
         "text": "Quem somos"
@@ -294,7 +294,7 @@
   },
   "rich-text#phone__atendimento__footer": {
     "props": {
-      "text": "(11) 3333-3333",
+      "text": "[(11) 3333-3333](tel:+551133333333)",
       "blockClass": "contact__atendimento__footer"
     }
   },
@@ -318,7 +318,7 @@
   },
   "rich-text#whatsapp__atendimento__footer": {
     "props": {
-      "text": "(11) 99999-9999",
+      "text": "[(11) 99999-9999](https://wa.me/5511999999999)",
       "blockClass": "contact__atendimento__footer"
     }
   },
@@ -342,7 +342,7 @@
   },
   "rich-text#email__atendimento__footer": {
     "props": {
-      "text": "sac@email.com.br",
+      "text": "[sac@email.com.br](mailto:sac@email.com.br)",
       "blockClass": "contact__atendimento__footer"
     }
   },
@@ -454,60 +454,9 @@
   },
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
+      "flex-layout.row#main__footer",
+      "flex-layout.row#payment__footer",
+      "flex-layout.row#copyright__footer"
     ]
-  },
-  "flex-layout.row#2-footer-mobile": {
-    "children": [
-      "flex-layout.col#footer-1-mobile"
-    ],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
-    }
-  },
-  "flex-layout.col#footer-1-mobile": {
-    "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
-    ],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
-    }
-  },
-  "flex-layout.row#1-footer-mobile": {
-    "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": [
-      "vtex.menu@2.x:menu#footer-mobile"
-    ]
-  },
-  "rich-text#footer-mobile": {
-    "props": {
-      "text": "© 2024 Copyright - UPNEXT - Todos os direitos reservados.",
-      "blockClass": "footer"
-    }
-  },
-  "social-networks": {
-    "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/"
-        }
-      ]
-    }
   }
 }

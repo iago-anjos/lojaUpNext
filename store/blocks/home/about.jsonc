@@ -2,7 +2,7 @@
   "flex-layout.row#about": {
     "props": {
       "blockClass": "about",
-      "fullWidth": false,
+      "fullWidth": true,
       "preventVerticalStretch": true
     },
     "children": [

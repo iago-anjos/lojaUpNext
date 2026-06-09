@@ -25,10 +25,39 @@
   flex: none !important;
 }
 
+.flexRow--description {
+  margin-top: 48px;
+}
+
 .flexRowContent--description {
+  width: 1171px;
   max-width: 1171px;
+  min-height: 378px;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
 }
 
 .flexRowContent--share {
+  width: 1171px;
   max-width: 1171px;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.flexRow--related-shelf {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.flexRowContent--related-shelf {
+  width: 1388px;
+  max-width: 1388px;
+  height: 531px;
+  border-radius: 3px;
+  background: #f5f5f5;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: clip;
 }

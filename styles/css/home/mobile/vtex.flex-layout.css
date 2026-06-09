@@ -1,0 +1,240 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+  /* ── LATERAL 10px — todos os blocos da home ───────────── */
+
+  /* DEALS: flex real via :global, grid 2×2, gap 10px */
+  .flexRow--deals :global(.vtex-flex-layout-0-x-flexRowContent--deals) {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+  .flexRowContent--deals :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    flex: 0 0 calc(50% - 5px) !important;
+    width: calc(50% - 5px) !important;
+  }
+  .flexCol--card__deals {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: unset !important;
+    height: auto !important;
+    padding: 16px 12px !important;
+    gap: 4px !important;
+  }
+
+  /* CATEGORIES: carrossel horizontal com peek, 10px das laterais da página */
+  .flexRow--categories {
+    overflow: hidden !important;
+    margin-bottom: 38px !important;
+  }
+  .flexRow--categories
+    :global(.vtex-flex-layout-0-x-flexRowContent--categories) {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    gap: 12px !important;
+    padding: 10px 0 16px 0 !important;
+    width: calc(100% - 20px) !important;
+    margin: 0 auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #8b003b #c80d65 !important;
+  }
+  .flexRowContent--categories
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    flex: 0 0 201px !important;
+    width: 201px !important;
+    min-width: 201px !important;
+    scroll-snap-align: start !important;
+  }
+  .flexCol--item__categories {
+    flex: 0 0 201px !important;
+    width: 201px !important;
+    height: auto !important;
+    align-items: center !important;
+  }
+
+  /* SHELF: overflow visible para os dots não serem cortados — sem gap do titulo */
+  .flexRow--shelf {
+    overflow: visible !important;
+    background: #ffffff !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Titulo da shelf: sem espaco extra abaixo */
+  .flexRow--shelf-title {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* padding 6px: alinha com o título da shelf (10px total) */
+  .flexRowContent--shelf {
+    width: 100% !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    padding-top: 0 !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+  }
+
+  .flexCol--products__shelf {
+    overflow: visible !important;
+  }
+
+  .flexRowContent--shelf-title {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* SHELF CARD: container de desconto — preço e badge lado a lado, alinhado com botões */
+  .flexRow--listPriceRow__shelf
+    :global(.vtex-flex-layout-0-x-flexRowContent--listPriceRow__shelf) {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+    min-height: 44px !important;
+    padding-left: 8px !important;
+  }
+
+  /* Filhos do listPriceRow: largura automatica para ficarem lado a lado */
+  .flexRowContent--listPriceRow__shelf
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    flex: 0 0 auto !important;
+    width: auto !important;
+  }
+
+  /* SHELF CARD: buy area vai para o fundo do card (margin-top: auto) */
+  .flexRow--buy__shelf {
+    margin-top: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    flex-shrink: 0 !important;
+  }
+
+  .flexRow--buy__shelf
+    :global(.vtex-flex-layout-0-x-flexRowContent--buy__shelf) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* stretchChildrenWidth dentro do buy area:
+     flex-basis controla a altura em column — override do inline style do VTEX
+     Width 161px para nao centralizar filhos maiores fora do container */
+  .flexRowContent--buy__shelf
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    flex: 0 0 41px !important;
+    max-height: 41px !important;
+    overflow: visible !important;
+    width: 161px !important;
+    min-width: 161px !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Colunas de qty e addtocart: 161px × 41px (pai e filho) */
+  .flexCol--addtocart__shelf,
+  .flexColChild--addtocart__shelf {
+    width: 161px !important;
+    min-width: 161px !important;
+    max-width: 161px !important;
+    height: 41px !important;
+    overflow: visible !important;
+  }
+
+  .flexCol--qty__shelf,
+  .flexColChild--qty__shelf {
+    width: 161px !important;
+    min-width: 161px !important;
+    max-width: 161px !important;
+    height: 41px !important;
+    overflow: visible !important;
+  }
+
+  /* ABOUT: full width, coluna, sem margens — colado no newsletter */
+  .flexRow--about {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 70px !important;
+    overflow: visible !important;
+  }
+
+  .flexRow--about :global(.vtex-flex-layout-0-x-flexRowContent--about) {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: auto !important;
+    align-items: center !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .flexRowContent--about :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  /* model: visível no mobile (desktop 768px esconde) */
+  .flexRow--about :global(.vtex-flex-layout-0-x-flexCol--model__about) {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    flex: 0 0 auto !important;
+    overflow: visible !important;
+  }
+
+  /* content: logo + texto centralizados */
+  .flexCol--content__about {
+    width: 100% !important;
+    flex: 0 0 auto !important;
+    padding: 24px 32px 40px !important;
+    gap: 16px !important;
+    align-items: center !important;
+  }
+
+  .flexRowContent--banners-offer-mobile {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* BANNERS SEASON: flex real via :global, grid 2×2, gap 10px, 10px das laterais */
+  .flexRow--banners-season
+    :global(.vtex-flex-layout-0-x-flexRowContent--banners-season) {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    padding: 0 !important;
+    width: calc(100% - 20px) !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* CATEGORIES — WebKit scrollbar (Chrome/Safari mobile) */
+@media (max-width: 767px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--categories)::-webkit-scrollbar {
+    height: 4px;
+  }
+  :global(
+    .vtex-flex-layout-0-x-flexRowContent--categories
+  )::-webkit-scrollbar-track {
+    background: #c80d65;
+    border-radius: 10px;
+  }
+  :global(
+    .vtex-flex-layout-0-x-flexRowContent--categories
+  )::-webkit-scrollbar-thumb {
+    background: #8b003b;
+    border-radius: 10px;
+  }
+}

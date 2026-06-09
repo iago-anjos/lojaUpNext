@@ -1,0 +1,19 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+  /* Cada item do menu Institucional com linha separadora */
+  .menuContainer--institucional__footer
+    :global(.vtex-menu-2-x-styledLinkContainer) {
+    border-bottom: 1px solid #cdcdcd !important;
+    padding: 12px 0 !important;
+    margin: 0 !important;
+    width: 340px !important;
+  }
+
+  /* Último item: sem linha abaixo */
+  .menuContainer--institucional__footer
+    :global(.vtex-menu-2-x-menuItem):last-child
+    :global(.vtex-menu-2-x-styledLinkContainer) {
+    border-bottom: none !important;
+  }
+}

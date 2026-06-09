@@ -1,13 +1,15 @@
 {
   "store.custom#contact-us": {
     "children": [
-      "flex-layout.row#contact-us"
+      "flex-layout.row#contact-us",
+      "flex-layout.row#newsletter"
     ]
   },
 
   "flex-layout.row#contact-us": {
     "props": {
-      "blockClass": "contact"
+      "blockClass": "contact",
+      "fullWidth": true
     },
     "children": [
       "flex-layout.col#contact-us"
@@ -16,70 +18,98 @@
 
   "flex-layout.col#contact-us": {
     "children": [
-      "rich-text#contact-us",
-      "form#contact-us"
-    ]
-  },
-  "rich-text#contact-us": {
-    "props": {
-      "text": "## Contact Us"
-    }
-  },
-
-  "form#contact-us": {
-    "props": {
-      "entity": "contact",
-      "schema": "site-contact"
-    },
-    "blocks": [
-      "form-success#contact-us"
-    ],
-    "children": [
-      "form-input.text#title",
-      "form-input.text#name",
-      "form-input.text#email",
-      "form-input.textarea#message",
-      "form-submit#contact"
+      "rich-text#contact-title",
+      "rich-text#contact-subtitle",
+      "flex-layout.row#contact-cards"
     ]
   },
 
-  "form-success#contact-us": {
-    "children": [
-      "rich-text#success-submit"
-    ]
-  },
-  "rich-text#success-submit": {
+  "rich-text#contact-title": {
     "props": {
-      "text": "Thanks for reaching out! We will come back shortly.",
+      "text": "## Fale Conosco",
       "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "textPosition": "CENTER",
+      "blockClass": "contactTitle"
     }
   },
 
-  "form-input.text#title": {
+  "rich-text#contact-subtitle": {
     "props": {
-      "pointer": "#/properties/title"
-    }
-  },
-  "form-input.text#name": {
-    "props": {
-      "pointer": "#/properties/name"
-    }
-  },
-  "form-input.text#email": {
-    "props": {
-      "pointer": "#/properties/email"
-    }
-  },
-  "form-input.textarea#message": {
-    "props": {
-      "pointer": "#/properties/message"
+      "text": "Estamos aqui para ajudar. Escolha o canal de sua preferência — nossa equipe responde em até 1 dia útil.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "contactSubtitle"
     }
   },
 
-  "form-submit#contact": {
+  "flex-layout.row#contact-cards": {
     "props": {
-      "label": "Submit"
-    }
+      "blockClass": "contactCards"
+    },
+    "children": [
+      "flex-layout.col#contact-whatsapp",
+      "flex-layout.col#contact-email",
+      "flex-layout.col#contact-phone"
+    ]
+  },
+
+  "flex-layout.col#contact-whatsapp": {
+    "props": {
+      "blockClass": "contactCard"
+    },
+    "children": [
+      "rich-text#contact-whatsapp-title",
+      "rich-text#contact-whatsapp-desc",
+      "rich-text#contact-whatsapp-link"
+    ]
+  },
+  "rich-text#contact-whatsapp-title": {
+    "props": { "text": "### WhatsApp", "blockClass": "contactCardTitle" }
+  },
+  "rich-text#contact-whatsapp-desc": {
+    "props": { "text": "Atendimento rápido pelo seu canal favorito.\n\nSeg. a Sex. das 9h às 18h.", "blockClass": "contactCardDesc" }
+  },
+  "rich-text#contact-whatsapp-link": {
+    "props": { "text": "[(11) 99999-9999](https://wa.me/5511999999999)", "blockClass": "contactCardLink" }
+  },
+
+  "flex-layout.col#contact-email": {
+    "props": {
+      "blockClass": "contactCard"
+    },
+    "children": [
+      "rich-text#contact-email-title",
+      "rich-text#contact-email-desc",
+      "rich-text#contact-email-link"
+    ]
+  },
+  "rich-text#contact-email-title": {
+    "props": { "text": "### E-mail", "blockClass": "contactCardTitle" }
+  },
+  "rich-text#contact-email-desc": {
+    "props": { "text": "Para dúvidas, sugestões ou problemas com pedidos.\n\nRespondemos em até 1 dia útil.", "blockClass": "contactCardDesc" }
+  },
+  "rich-text#contact-email-link": {
+    "props": { "text": "[sac@email.com.br](mailto:sac@email.com.br)", "blockClass": "contactCardLink" }
+  },
+
+  "flex-layout.col#contact-phone": {
+    "props": {
+      "blockClass": "contactCard"
+    },
+    "children": [
+      "rich-text#contact-phone-title",
+      "rich-text#contact-phone-desc",
+      "rich-text#contact-phone-link"
+    ]
+  },
+  "rich-text#contact-phone-title": {
+    "props": { "text": "### Telefone", "blockClass": "contactCardTitle" }
+  },
+  "rich-text#contact-phone-desc": {
+    "props": { "text": "Prefere falar com nossa equipe?\n\nSeg. a Sex. das 9h às 18h.", "blockClass": "contactCardDesc" }
+  },
+  "rich-text#contact-phone-link": {
+    "props": { "text": "[(11) 3333-3333](tel:+551133333333)", "blockClass": "contactCardLink" }
   }
 }

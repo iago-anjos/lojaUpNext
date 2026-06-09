@@ -1,0 +1,12 @@
+/* Mobile - abaixo de 768px */
+
+@media (max-width: 767px) {
+  /* Header total = 108px: linha 1 (main) 59px + linha 2 (search) 49px (40 + 9 gap inferior) */
+  .flexRowContent--search-mobile {
+    height: 49px !important;
+    min-height: 49px !important;
+    align-items: flex-start !important;
+    padding-top: 0 !important;
+    padding-bottom: 9px !important;
+  }
+}

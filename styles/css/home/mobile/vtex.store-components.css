@@ -1,0 +1,18 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+
+  /* ABOUT: modelo — tamanho mobile, mantém margin-top negativo do desktop */
+  .imageElement--model__about {
+    width: 304.842px !important;
+    height: 428.684px !important;
+    margin-top: -70px !important;
+  }
+
+  /* ABOUT: logo */
+  .imageElement--logo__about {
+    width: 243.354px !important;
+    height: 70.148px !important;
+  }
+
+}

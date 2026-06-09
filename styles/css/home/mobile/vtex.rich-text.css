@@ -1,0 +1,54 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+  /* DEALS — remove margem padrão do <p> para título e sub ficarem próximos */
+  .container--title__deals,
+  .container--sub__deals {
+    margin: 0 !important;
+  }
+  .paragraph--title__deals {
+    font-family: "Inter", sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    margin: 0 0 4px 0 !important;
+  }
+  .paragraph--sub__deals {
+    font-family: "Inter", sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
+
+  /* CATEGORIES */
+  .paragraph--label__categories {
+    font-family: "Istok Web", sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    margin: 6px 0 0 0 !important;
+  }
+
+  /* ABOUT: largura fixa do texto */
+  .paragraph--text__about {
+    width: 296px !important;
+    font-size: 16px !important;
+  }
+
+  /* BANNERS SEASON: fonte conforme Figma (sobrescreve o 16px do desktop ≤768px) */
+  .paragraph--label__banners-season {
+    font-family: "Inter", sans-serif !important;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+    text-transform: uppercase !important;
+  }
+}

@@ -1,4 +1,4 @@
-/* ─── Menu horizontal (navbar) ─────────────────────────── */
+/* ─── Menu horizontal (navbar principal) ────────────────── */
 .styledLink {
   color: #fff;
   text-align: center;
@@ -14,11 +14,12 @@
   width: 100%;
 }
 
-.menuContainer--horizontal {
+.menuContainerNav .menuContainer {
   gap: 8px;
 }
 
-.menuContainer--horizontal .styledLinkContainer:hover {
+/* Hover/aberto do item principal — fundo roxo escuro + texto amarelo */
+.menuContainerNav .styledLinkContainer:hover {
   border-radius: 3px 3px 0 0;
   background: #591032;
   box-shadow:
@@ -26,7 +27,7 @@
     -12px 0 0 0 #591032;
 }
 
-.menuContainer--horizontal .menuItem--isOpen .styledLinkContainer {
+.menuContainerNav .menuItem--isOpen .styledLinkContainer {
   border-radius: 3px 3px 0 0;
   background: #591032;
   box-shadow:
@@ -34,16 +35,16 @@
     -12px 0 0 0 #591032;
 }
 
-/* Cor do texto no hover */
-.menuContainer--horizontal .styledLinkContainer:hover .styledLink,
-.menuContainer--horizontal .menuItem--isOpen .styledLink {
+.menuContainerNav .styledLinkContainer:hover .styledLink,
+.menuContainerNav .menuItem--isOpen .styledLink {
   color: #ffc700 !important;
 }
 
-/* Submenu (dropdown) */
+/* ─── Submenu (dropdown) ────────────────────────────────── */
 .submenu {
   width: 251px;
   box-shadow: 0 0 8.4px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
 }
 
 /* Faixa decorativa de 6px no topo do dropdown */
@@ -55,48 +56,109 @@
   background: #591032;
 }
 
-/* Lista vertical dentro do submenu */
-.menuContainer--vertical {
+/* Lista dentro do submenu */
+.submenu .menuContainer {
   width: 251px;
   background: #fff;
-  padding: 8px 0;
-  list-style: disc;
+  padding: 12px 0 8px;
+  margin: 0;
+  list-style: none;
 }
 
-/* Cor do bullet (herda para o marcador, styledLink sobrescreve o texto) */
-.menuContainer--vertical .menuItem {
-  color: #910e4b;
-  padding: 0 20px;
+/* Item da lista dentro do submenu — bullet roxo customizado */
+.submenu .menuItem {
+  position: relative;
+  padding: 6px 20px 6px 36px;
+  color: #666;
+  list-style: none;
 }
 
-/* Texto dos itens do submenu */
-.menuContainer--vertical .styledLink {
-  color: #333 !important;
+/* Bullet pill 8x5 com border-radius 50px */
+.submenu .menuItem::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 5px;
+  border-radius: 50px;
+  background: #91124B;
+}
+
+/* Texto dos itens do submenu — spec Figma */
+.submenu .menuItem .styledLink {
+  color: #666 !important;
   font-family: "Inter", sans-serif !important;
   font-size: 14px !important;
+  font-style: normal !important;
   font-weight: 400 !important;
+  line-height: 121.186% !important;
+  text-transform: capitalize !important;
   text-align: left !important;
 }
 
-/* ─── Conferir tudo ─────────────────────────────────────── */
-.menuItem--conferir-tudo {
-  list-style: none !important;
+.submenu .menuItem .styledLinkContainer {
   padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
 }
 
-.styledLinkContainer--conferir-tudo {
-  width: 251px;
-  height: 39px;
-  border-radius: 0 0 5px 0;
-  background: linear-gradient(90deg, #910d4b 0%, #5f002c 100%);
+/* Cancela o background/shadow do hover geral dentro do submenu */
+.submenu .menuItem .styledLinkContainer:hover {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* Hover do item do submenu: apenas texto roxo */
+.submenu .menuItem:hover .styledLink {
+  color: #910e4b !important;
+}
+
+/* ─── "Conferir tudo" — rodape do dropdown ──────────────── */
+.submenu .menuItem--conferir-tudo {
+  padding: 0 !important;
+  margin: 8px 0 0 !important;
+  list-style: none !important;
+}
+
+.submenu .menuItem--conferir-tudo::before {
+  display: none !important;
+}
+
+.submenu .menuItem--conferir-tudo .styledLinkContainer--conferir-tudo {
+  width: 251px !important;
+  height: 39px !important;
+  border-radius: 0 0 5px 0 !important;
+  background: linear-gradient(90deg, #910d4b 0%, #5f002c 100%) !important;
+  background-image: linear-gradient(90deg, #910d4b 0%, #5f002c 100%) !important;
   display: flex !important;
   align-items: center !important;
-  padding-left: 16px !important;
+  padding-left: 20px !important;
+  margin: 0 !important;
 }
 
-.styledLink--conferir-tudo {
-  color: #fff !important;
-  font-family: "Inter", sans-serif !important;
-  font-size: 14px !important;
+/* Aumenta especificidade para sobrescrever a regra geral .submenu .menuItem .styledLink */
+.submenu .menuItem--conferir-tudo .styledLink--conferir-tudo {
+  color: #FFF !important;
+  font-family: "Istok Web", sans-serif !important;
+  font-size: 16px !important;
+  font-style: normal !important;
   font-weight: 400 !important;
+  line-height: 121.186% !important;
+  text-align: left !important;
+  text-transform: none !important;
+}
+
+.submenu .menuItem--conferir-tudo:hover .styledLink--conferir-tudo {
+  color: #ffc700 !important;
+}
+
+@media (max-width: 1024px) {
+  .menuContainerNav .menuContainer {
+    gap: 4px;
+  }
 }

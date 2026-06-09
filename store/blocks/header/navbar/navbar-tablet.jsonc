@@ -1,0 +1,99 @@
+{
+  "flex-layout.row#navbar-main-tablet": {
+    "props": { "blockClass": "main__navbar", "fullWidth": true },
+    "children": [
+      "flex-layout.col#logo-col__navbar-tablet",
+      "flex-layout.col#search-col__navbar-tablet",
+      "flex-layout.col#actions-col__navbar-tablet"
+    ]
+  },
+  "flex-layout.col#logo-col__navbar-tablet": {
+    "props": { "blockClass": "logo-col__navbar" },
+    "children": ["logo#navbar-tablet"]
+  },
+  "logo#navbar-tablet": {
+    "props": {
+      "title": "UpNext",
+      "href": "/",
+      "url": "assets/images/logo-upnext.png",
+      "width": "169",
+      "height": "51",
+      "blockClass": "navbar"
+    }
+  },
+  "flex-layout.col#search-col__navbar-tablet": {
+    "props": { "blockClass": "search-col__navbar" },
+    "children": ["search-bar#tablet"]
+  },
+  "search-bar#tablet": {
+    "props": {
+      "blockClass": "tablet",
+      "placeholder": "O que deseja?"
+    }
+  },
+  "flex-layout.col#actions-col__navbar-tablet": {
+    "props": { "blockClass": "actions-col__navbar" },
+    "children": ["login#tablet", "minicart.v2#tablet"]
+  },
+  "login#tablet": {
+    "props": { "iconSize": 24, "iconLabel": "Faça seu Login" }
+  },
+  "minicart.v2#tablet": {
+    "props": {
+      "minicartIconLabel": "Minha Sacola",
+      "quantityDisplayPosition": "right"
+    }
+  },
+
+  "flex-layout.row#navbar-menu-tablet": {
+    "props": { "blockClass": "menu__navbar", "fullWidth": true },
+    "children": ["vtex.menu@2.x:menu#main-menu-tablet"]
+  },
+  "vtex.menu@2.x:menu#main-menu-tablet": {
+    "props": { "orientation": "horizontal" },
+    "children": [
+      "menu-item#beleza-t",
+      "menu-item#mindset-t",
+      "menu-item#calcados-t",
+      "menu-item#esportivo-t",
+      "menu-item#eletronicos-t",
+      "menu-item#jeans-t"
+    ]
+  },
+  "menu-item#beleza-t": {
+    "props": {
+      "type": "custom", "highlight": false,
+      "itemProps": { "type": "internal", "href": "/beleza", "text": "Beleza" }
+    }
+  },
+  "menu-item#mindset-t": {
+    "props": {
+      "type": "custom", "highlight": false,
+      "itemProps": { "type": "internal", "href": "/mindset", "text": "Mindset" }
+    }
+  },
+  "menu-item#calcados-t": {
+    "props": {
+      "type": "custom", "highlight": false,
+      "itemProps": { "type": "internal", "href": "/calcados", "text": "Calçados" }
+    }
+  },
+  "menu-item#esportivo-t": {
+    "props": {
+      "type": "custom", "highlight": false,
+      "itemProps": { "type": "internal", "href": "/esportivo", "text": "Esportivo" }
+    }
+  },
+  "menu-item#eletronicos-t": {
+    "props": {
+      "type": "custom", "highlight": false,
+      "itemProps": { "type": "internal", "href": "/eletronicos", "text": "Eletrônicos" }
+    }
+  },
+  "menu-item#jeans-t": {
+    "props": {
+      "type": "custom", "highlight": false,
+      "itemProps": { "type": "internal", "href": "/jeans", "text": "Jeans" }
+    }
+  }
+}

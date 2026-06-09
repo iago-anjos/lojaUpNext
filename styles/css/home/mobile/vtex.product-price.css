@@ -1,0 +1,26 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+  /* SHELF: padding-left 8px para alinhar com os botões (qty/comprar) */
+  .sellingPrice--shelf {
+    padding-left: 8px !important;
+  }
+
+  /* Preço de venda: 20px bold */
+  .sellingPrice--shelf .sellingPriceValue {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+  }
+
+  /* Preço de lista: 14px */
+  .listPrice--shelf .listPriceValue {
+    font-size: 14px !important;
+  }
+
+  /* Parcelamento: alinhado com botões + fonte menor + margin abaixo para afastar da qty */
+  .installments--shelf {
+    padding-left: 8px !important;
+    font-size: 12px !important;
+    margin-bottom: 16px !important;
+  }
+}

@@ -1,0 +1,91 @@
+/* ─────────────────────────────────────────────
+   Contato — Rich Text
+   ───────────────────────────────────────────── */
+
+/* Titulo da pagina */
+.heading--contactTitle {
+  color: #910e4b;
+  font-family: "Istok Web", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Subtitulo */
+.paragraph--contactSubtitle {
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  color: #3f3f40;
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 600px;
+  align-self: center;
+}
+
+/* Card — Titulo */
+.heading--contactCardTitle {
+  color: #910e4b;
+  font-family: "Istok Web", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Card — Descricao */
+.paragraph--contactCardDesc,
+.wrapper--contactCardDesc {
+  font-family: "Istok Web", sans-serif;
+  font-size: 14px;
+  color: #3f3f40;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Card — Link/CTA */
+.paragraph--contactCardLink {
+  margin: 8px 0 0;
+}
+
+.paragraph--contactCardLink :global(.vtex-rich-text-0-x-link) {
+  display: inline-block;
+  background: #910e4b;
+  color: #ffffff !important;
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 200ms ease;
+}
+
+.paragraph--contactCardLink :global(.vtex-rich-text-0-x-link):hover {
+  background: #7a0c3f;
+}
+
+/* Tablet — 768-1023px */
+@media (max-width: 1023px) {
+  .heading--contactTitle {
+    font-size: 30px;
+  }
+}
+
+/* Mobile — 320-767px */
+@media (max-width: 767px) {
+  .heading--contactTitle {
+    font-size: 26px;
+  }
+
+  .paragraph--contactSubtitle {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .heading--contactCardTitle {
+    font-size: 18px;
+  }
+}

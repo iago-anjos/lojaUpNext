@@ -1,0 +1,61 @@
+/* ─────────────────────────────────────────────
+   Sobre Nos — Flex Layout
+   ───────────────────────────────────────────── */
+
+/* HERO: gradient roxo, padding generoso */
+.flexRowContent--aboutHero {
+  background: linear-gradient(135deg, #910e4b 0%, #591032 100%);
+  padding: 80px 24px !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MISSAO: 2 colunas centralizadas com max-width */
+.flexRowContent--aboutMission {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 72px 24px !important;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.flexCol--aboutColumn {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* CTA: fundo cinza claro */
+.flexRowContent--aboutCta {
+  background: #EEEEEE;
+  padding: 48px 24px !important;
+  justify-content: center;
+}
+
+/* Tablet — 768-1023px */
+@media (max-width: 1023px) {
+  .flexRowContent--aboutHero {
+    padding: 64px 24px !important;
+  }
+
+  .flexRowContent--aboutMission {
+    padding: 56px 24px !important;
+    gap: 48px;
+  }
+}
+
+/* Mobile — 320-767px */
+@media (max-width: 767px) {
+  .flexRowContent--aboutHero {
+    padding: 48px 16px !important;
+  }
+
+  .flexRowContent--aboutMission {
+    flex-direction: column !important;
+    padding: 40px 16px !important;
+    gap: 32px;
+  }
+
+  .flexRowContent--aboutCta {
+    padding: 32px 16px !important;
+  }
+}

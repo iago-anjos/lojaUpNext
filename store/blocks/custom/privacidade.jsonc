@@ -1,0 +1,47 @@
+{
+  "store.custom#privacidade": {
+    "children": [
+      "flex-layout.row#institutional",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "flex-layout.row#institutional": {
+    "props": {
+      "blockClass": "institutional",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#institutional"
+    ]
+  },
+
+  "flex-layout.col#institutional": {
+    "children": [
+      "rich-text#privacidade-title",
+      "rich-text#privacidade-updated",
+      "rich-text#privacidade-content"
+    ]
+  },
+
+  "rich-text#privacidade-title": {
+    "props": {
+      "text": "## Política de Privacidade",
+      "blockClass": "institutionalTitle"
+    }
+  },
+
+  "rich-text#privacidade-updated": {
+    "props": {
+      "text": "*Última atualização: Maio de 2026*",
+      "blockClass": "institutionalUpdated"
+    }
+  },
+
+  "rich-text#privacidade-content": {
+    "props": {
+      "text": "### 1. Introdução\n\nA UpNext valoriza a sua privacidade e o seu direito de controlar suas informações pessoais. Esta política descreve como coletamos, usamos e protegemos seus dados em conformidade com a **Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018)**.\n\n### 2. Dados que coletamos\n\n- **Dados de cadastro**: nome, CPF, e-mail, telefone, endereço.\n- **Dados de pagamento**: informações de cartão (processadas por gateways certificados PCI-DSS, não armazenadas em nossos servidores).\n- **Dados de navegação**: cookies, IP, dispositivo, páginas visitadas.\n\n### 3. Como usamos seus dados\n\nUtilizamos suas informações exclusivamente para:\n\n- Processar pedidos e entregas\n- Comunicar status de compras\n- Oferecer suporte\n- Enviar ofertas (mediante consentimento)\n- Cumprir obrigações legais e fiscais\n\n### 4. Compartilhamento\n\nNão vendemos seus dados. Compartilhamos apenas com:\n\n- Transportadoras (para entrega)\n- Processadores de pagamento\n- Autoridades, quando exigido por lei\n\n### 5. Seus direitos (LGPD)\n\nVocê pode, a qualquer momento:\n\n- Solicitar acesso aos seus dados\n- Corrigir informações incorretas\n- Solicitar exclusão da sua conta\n- Revogar consentimento de comunicações\n\nPara exercer qualquer direito, entre em contato pelo e-mail **sac@email.com.br**.\n\n### 6. Segurança\n\nUtilizamos criptografia SSL/TLS, autenticação em camadas e auditorias periódicas para proteger seus dados.\n\n### 7. Contato do Encarregado (DPO)\n\nDúvidas sobre privacidade podem ser enviadas para **sac@email.com.br** com o assunto \"LGPD\".",
+      "blockClass": "institutionalContent"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+
+  /* CATEGORIES: tamanho fixo 201×169px */
+  .imageContainer--cat {
+    width: 201px !important;
+    overflow: hidden !important;
+    line-height: 0 !important;
+  }
+  .imageElement--cat {
+    width: 201px !important;
+    height: 169px !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  /* BANNERS SEASON: força altura quadrada, corta o excesso da imagem landscape */
+  .imageElement--img__banners-season {
+    height: 165.043px !important;
+    object-fit: cover !important;
+  }
+
+}

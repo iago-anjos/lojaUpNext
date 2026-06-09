@@ -8,3 +8,22 @@
   height: 41px !important;
   min-height: unset !important;
 }
+
+.buttonDataContainer--shelf :global(.vtex-button) {
+  background-color: #1faf38 !important;
+  border-color: #1faf38 !important;
+}
+
+.buttonDataContainer--shelf :global(.vtex-button):hover {
+  background-color: #18962f !important;
+  border-color: #18962f !important;
+}
+
+/* Estado ESGOTADO esta em vtex.flex-layout.css (anchor .flexColChild--addtocart__shelf) */
+
+@media (max-width: 767px) {
+  .button--shelf {
+    width: 161px !important;
+    height: 41px !important;
+  }
+}

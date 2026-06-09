@@ -19,12 +19,24 @@
 
 /* SOCIAL ICONS ROW */
 .flexRowContent--icons__social__footer {
+  flex-direction: row !important;
   flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+
+.flexRowContent--icons__social__footer
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
 }
 
 /* CONTACT ROWS */
 .flexRowContent--contact__atendimento__footer {
-  gap: 2px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 6px !important;
   align-items: center !important;
 }
 
@@ -60,11 +72,14 @@
   right: 0 !important;
 }
 
-/* ícone de atendimento ocupa só o necessário */
+/* ícone de atendimento ocupa só o necessário — inline-block garante row mesmo quando
+   o pai é display:block (<480px, onde flex-ns não dispara) */
 .flexRowContent--contact__atendimento__footer
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
   flex: 0 0 auto !important;
   width: auto !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
 }
 
 .flexRowContent--payment__footer
@@ -86,8 +101,31 @@
   width: auto !important;
 }
 
-.flexRowContent--copyright__footer
-  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
-  flex: 1 !important;
-  width: auto !important;
+/* ── MOBILE (≤640px): empilha colunas do footer ─────────── */
+@media (max-width: 640px) {
+  .flexRowContent--main__footer {
+    flex-direction: column !important;
+    padding: 24px 16px !important;
+    gap: 24px !important;
+  }
+
+  .flexRowContent--payment__footer {
+    padding: 8px 16px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .flexRowContent--copyright__footer {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 12px 16px !important;
+    gap: 8px !important;
+  }
+
+  .flexRowContent--copyright__footer
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    position: static !important;
+    right: auto !important;
+  }
 }

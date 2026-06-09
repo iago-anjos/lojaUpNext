@@ -1,0 +1,19 @@
+.flexRow--not-found {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 24px;
+  align-items: center;
+  gap: 80px;
+  box-sizing: border-box;
+}
+
+.flexCol--not-found-image {
+  flex: 0 0 360px;
+  max-width: 360px;
+  margin-right: 80px;
+}
+
+.flexCol--not-found-content {
+  flex: 1;
+  min-width: 0;
+}

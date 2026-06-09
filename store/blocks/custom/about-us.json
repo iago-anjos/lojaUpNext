@@ -1,56 +1,118 @@
 {
   "store.custom#about-us": {
     "blocks": [
-      "flex-layout.row#about-us",
-      "video#about-us"
+      "flex-layout.row#about-hero",
+      "flex-layout.row#about-mission",
+      "flex-layout.row#about-cta",
+      "flex-layout.row#newsletter"
     ]
   },
 
-  "flex-layout.row#about-us": {
+  "flex-layout.row#about-hero": {
+    "props": {
+      "blockClass": "aboutHero",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#about-hero-content"]
+  },
+
+  "flex-layout.col#about-hero-content": {
     "children": [
-      "image#mobile-phone",
-      "flex-layout.col#text-about-us"
+      "rich-text#about-title",
+      "rich-text#about-subtitle"
     ]
   },
 
-  "flex-layout.col#text-about-us": {
+  "rich-text#about-title": {
+    "props": {
+      "text": "# Sobre a UpNext",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "aboutTitle"
+    }
+  },
+
+  "rich-text#about-subtitle": {
+    "props": {
+      "text": "**Moda, estilo e qualidade para quem quer estar sempre à frente**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "aboutSubtitle"
+    }
+  },
+
+  "flex-layout.row#about-mission": {
+    "props": {
+      "blockClass": "aboutMission"
+    },
     "children": [
-      "rich-text#title-about-us",
-      "rich-text#about-us"
+      "flex-layout.col#about-left",
+      "flex-layout.col#about-right"
+    ]
+  },
+
+  "flex-layout.col#about-left": {
+    "children": [
+      "rich-text#about-mission-title",
+      "rich-text#about-mission-text"
     ],
     "props": {
-      "blockclass": "textColumn",
-      "preventVerticalStretch": true
+      "blockClass": "aboutColumn"
     }
   },
 
-  "rich-text#title-about-us": {
+  "rich-text#about-mission-title": {
     "props": {
-      "text":
-      "# Create meaningful and relevant experiences.",
-      "blockClass": "title"
+      "text": "## Nossa Missão",
+      "blockClass": "aboutSectionTitle"
     }
   },
 
-  "image#mobile-phone": {
+  "rich-text#about-mission-text": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
-      "maxHeight": "",
-      "maxWidth": "",
-      "blockClass": "storePrint"
+      "text": "Na UpNext, acreditamos que moda é expressão. Nossa missão é conectar você às melhores marcas e tendências do mercado, com produtos de qualidade, preços acessíveis e uma experiência de compra simples, rápida e segura.\n\nDesde 2020, levamos beleza, estilo e praticidade para milhares de clientes em todo o Brasil.",
+      "blockClass": "aboutText"
     }
   },
-  "video#about-us": {
+
+  "flex-layout.col#about-right": {
+    "children": [
+      "rich-text#about-values-title",
+      "rich-text#about-values-text"
+    ],
     "props": {
-      "src": "https://www.youtube.com/embed/JgkrlaF52WQ",
-      "width": "100%",
-      "height": "100%"
+      "blockClass": "aboutColumn"
     }
   },
-  "rich-text#about-us": {
+
+  "rich-text#about-values-title": {
     "props": {
-      "text": "**Optimized store framework** \n Free your front-end with our React + Node store framework. Improve usability and SEO, while driving more conversion with modular components, single page applications, and a ready-for-PWA structure. \n **Multi-currency and language** \n Go international with multiple storefronts to support different languages and easily manage local currencies and payment conditions. \n **Serverless development platform** \n Reduce loading time, improve usability, and make the best out of SEO. Developing scalable components with a comprehensive, easy-to-use toolset, you can build stores faster than ever.",
-      "blockClass": "about"
+      "text": "## Nossos Valores",
+      "blockClass": "aboutSectionTitle"
+    }
+  },
+
+  "rich-text#about-values-text": {
+    "props": {
+      "text": "- **Qualidade** — Produtos selecionados com critério e cuidado\n- **Transparência** — Preços claros, sem taxas surpresa\n- **Conveniência** — Entrega rápida em todo o Brasil\n- **Segurança** — Compra protegida do início ao fim\n- **Diversidade** — Moda para todos os estilos e ocasiões",
+      "blockClass": "aboutText"
+    }
+  },
+
+  "flex-layout.row#about-cta": {
+    "props": {
+      "blockClass": "aboutCta",
+      "fullWidth": true
+    },
+    "children": ["rich-text#about-cta-text"]
+  },
+
+  "rich-text#about-cta-text": {
+    "props": {
+      "text": "**Mais de 4 anos conectando pessoas à moda que elas amam.**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "aboutCtaText"
     }
   }
 }

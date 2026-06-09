@@ -1,28 +1,60 @@
+/* ─────────────────────────────────────────────
+   FAQ — Disclosure (Accordion)
+   ───────────────────────────────────────────── */
+
+/* Cada pergunta (trigger) */
 .trigger--question {
   display: flex;
   align-items: center;
   cursor: pointer;
   outline: none;
+  padding: 18px 4px;
+  border-bottom: 1px solid #D9D9D9;
+  gap: 12px;
+  transition: background-color 200ms ease;
+}
+
+.trigger--question:hover {
+  background-color: rgba(145, 14, 75, 0.03);
+}
+
+/* Texto da pergunta cresce (fica a esquerda) */
+.trigger--question :global(.vtex-rich-text-0-x-container) {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .trigger--question :global(.vtex-rich-text-0-x-paragraph) {
-  font-weight: bold;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2C2D30;
+  text-align: left;
+  margin: 0;
+  line-height: 1.4;
 }
 
-.trigger--question:focus,
-.trigger--question:focus :global(.vtex-rich-text-0-x-paragraph) {
-  color: #0F3E99;
+.trigger--question:hover :global(.vtex-rich-text-0-x-paragraph) {
+  color: #910e4b;
 }
 
+/* Caret fixo a direita */
 .trigger :global(.vtex-store-icons-0-x-caretIcon) {
-  margin-right: 1rem;
+  color: #910e4b;
+  flex-shrink: 0;
+  margin: 0;
+  width: 14px;
+  height: 14px;
 }
 
+/* Conteudo — resposta (animada) */
 .content--answer {
-  transition: opacity 250ms ease-in-out, height 250ms ease-in-out, transform 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out, height 250ms ease-in-out,
+    transform 250ms ease-in-out;
   opacity: 0;
   height: 0;
   transform: translate3d(0, -10%, 0);
+  overflow: hidden;
 }
 
 .content--answer[data-enter] {
@@ -34,4 +66,30 @@
 .content--answer[data-leave] {
   height: 0;
   overflow: hidden;
+}
+
+/* Texto da resposta */
+.content--answer :global(.vtex-rich-text-0-x-paragraph) {
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+  color: #3f3f40;
+  line-height: 1.7;
+  padding: 8px 4px 20px;
+  margin: 0;
+}
+
+/* Mobile — 320-767px */
+@media (max-width: 767px) {
+  .trigger--question {
+    padding: 16px 4px;
+  }
+
+  .trigger--question :global(.vtex-rich-text-0-x-paragraph) {
+    font-size: 15px;
+  }
+
+  .content--answer :global(.vtex-rich-text-0-x-paragraph) {
+    font-size: 14px;
+    padding: 8px 4px 16px;
+  }
 }

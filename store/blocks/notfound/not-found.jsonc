@@ -1,0 +1,81 @@
+{
+  "store.not-found": {
+    "children": ["flex-layout.row#not-found", "flex-layout.row#newsletter"]
+  },
+
+  "flex-layout.row#not-found": {
+    "props": {
+      "blockClass": "not-found",
+      "fullWidth": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#not-found-image",
+      "flex-layout.col#not-found-content"
+    ]
+  },
+
+  "flex-layout.col#not-found-image": {
+    "props": {
+      "blockClass": "not-found-image",
+      "verticalAlign": "middle"
+    },
+    "children": ["rich-text#not-found-image"]
+  },
+
+  "rich-text#not-found-image": {
+    "props": {
+      "blockClass": "not-found-image",
+      "text": "![Página não encontrada](assets/images/erro.png)"
+    }
+  },
+
+  "flex-layout.col#not-found-content": {
+    "props": {
+      "blockClass": "not-found-content",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#not-found-title",
+      "rich-text#not-found-body",
+      "rich-text#not-found-link",
+      "rich-text#not-found-help",
+      "rich-text#not-found-whatsapp"
+    ]
+  },
+
+  "rich-text#not-found-title": {
+    "props": {
+      "blockClass": "not-found-title",
+      "text": "# Oh, não!"
+    }
+  },
+
+  "rich-text#not-found-body": {
+    "props": {
+      "blockClass": "not-found-body",
+      "text": "Não houve resultados em sua busca :(\n\n- Utilize nossa busca para encontrar o que deseja.\n- Navegue por nossos departamentos.\n- Volte para a página inicial e confira nossas incríveis ofertas."
+    }
+  },
+
+  "rich-text#not-found-link": {
+    "props": {
+      "blockClass": "not-found-link",
+      "text": "[Ir para página inicial](/)"
+    }
+  },
+
+  "rich-text#not-found-help": {
+    "props": {
+      "blockClass": "not-found-help",
+      "text": "**Precisa de ajuda?**\n\nConverse com nosso time via whatsapp"
+    }
+  },
+
+  "rich-text#not-found-whatsapp": {
+    "props": {
+      "blockClass": "not-found-whatsapp",
+      "text": "[![whatsapp](assets/images/icon-whats.svg) ENTRE EM CONTATO CONOSCO](https://wa.me/5541999999999)"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/* ─────────────────────────────────────────────
+   Paginas Institucionais (politicas + como comprar)
+   Layout base: container centralizado max 800px
+   ───────────────────────────────────────────── */
+
+.flexRowContent--institutional {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 72px 24px !important;
+  flex-direction: column;
+}
+
+/* Tablet — 768-1023px */
+@media (max-width: 1023px) {
+  .flexRowContent--institutional {
+    padding: 56px 24px !important;
+  }
+}
+
+/* Mobile — 320-767px */
+@media (max-width: 767px) {
+  .flexRowContent--institutional {
+    padding: 40px 16px !important;
+  }
+}

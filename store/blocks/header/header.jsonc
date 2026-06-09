@@ -99,40 +99,67 @@
   },
   "header-layout.mobile": {
     "children": [
-      "flex-layout.row#topbar",
-      "sticky-layout#1-mobile"
+      "responsive-layout.tablet#header",
+      "responsive-layout.phone#header"
     ]
+  },
+  "responsive-layout.tablet#header": {
+    "children": ["sticky-layout#header-tablet"]
+  },
+  "sticky-layout#header-tablet": {
+    "children": [
+      "flex-layout.row#topbar-tablet",
+      "flex-layout.row#navbar-main-tablet",
+      "flex-layout.row#navbar-menu-tablet"
+    ]
+  },
+  "responsive-layout.phone#header": {
+    "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
     "children": [
-      "flex-layout.row#1-mobile"
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#search-mobile"
     ]
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
       "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
+      "minicart.v2#navbar"
     ],
     "props": {
       "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
       "fullWidth": true
+    }
+  },
+  "flex-layout.row#search-mobile": {
+    "props": {
+      "blockClass": "search-mobile",
+      "fullWidth": true
+    },
+    "children": ["search-bar#mobile"]
+  },
+  "search-bar#mobile": {
+    "props": {
+      "blockClass": "mobile",
+      "placeholder": "O que deseja?"
     }
   },
   "drawer": {
     "children": [
-      "menu#drawer"
+      "menu#drawer",
+      "login"
     ]
   },
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#beleza",
+      "menu-item#mindset",
+      "menu-item#calcados",
+      "menu-item#esportivo",
+      "menu-item#eletronicos",
+      "menu-item#jeans"
     ],
     "props": {
       "orientation": "vertical"
@@ -140,11 +167,12 @@
   },
   "logo#mobile": {
     "props": {
-      "title": "Logo",
+      "title": "Logo UpNext",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
+      "url": "assets/images/logo-upnext.png",
+      "width": "114",
+      "height": "34",
+      "blockClass": "mobile"
     }
   }
 }

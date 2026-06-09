@@ -77,6 +77,35 @@
   font-style: normal;
   font-weight: 400;
   line-height: 149.26%;
-  width: 841px;
+  width: 100%;
+  max-width: 841px;
   margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .paragraph--text__about {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Deals: texto menor para caber em 2 colunas */
+  .paragraph--title__deals {
+    font-size: 15px;
+  }
+  .paragraph--sub__deals {
+    font-size: 12px;
+  }
+  /* Shelf title: discretamente menor */
+  .paragraph--shelf-title {
+    font-size: 18px;
+  }
+  /* About: texto com largura livre */
+  .paragraph--text__about {
+    font-size: 14px;
+  }
+  /* Banners season label: menor */
+  .paragraph--label__banners-season {
+    font-size: 16px;
+  }
 }

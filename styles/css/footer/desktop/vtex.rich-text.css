@@ -67,6 +67,12 @@
 .link--contact__atendimento__footer {
   color: #666 !important;
   text-decoration: none !important;
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+
+.link--contact__atendimento__footer:hover {
+  color: #910e4b !important;
 }
 
 .container--copyright__footer {

@@ -1,0 +1,43 @@
+/* ─────────────────────────────────────────────
+   FAQ — Rich Text
+   ───────────────────────────────────────────── */
+
+/* Titulo da pagina */
+.heading--faqTitle {
+  color: #910e4b;
+  font-family: "Istok Web", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Subtitulo */
+.paragraph--faqSubtitle {
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  color: #3f3f40;
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Tablet — 768-1023px */
+@media (max-width: 1023px) {
+  .heading--faqTitle {
+    font-size: 30px;
+  }
+}
+
+/* Mobile — 320-767px */
+@media (max-width: 767px) {
+  .heading--faqTitle {
+    font-size: 26px;
+  }
+
+  .paragraph--faqSubtitle {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+}

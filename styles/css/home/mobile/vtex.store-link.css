@@ -1,0 +1,11 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+
+  /* CATEGORIES: childrenContainer precisa ter 201px para a imagem crescer */
+  .childrenContainer--cat {
+    width: 201px !important;
+    display: block !important;
+  }
+
+}

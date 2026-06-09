@@ -1,0 +1,56 @@
+/* Mobile - 320px até 767px */
+
+@media (max-width: 767px) {
+
+  .flexRow--newsletter {
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  .flexCol--wrapper__newsletter {
+    padding: 24px 10px !important;
+    height: auto !important;
+    min-height: unset !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* inner já é coluna via desktop ≤960px — garante alinhamento central */
+  .flexRowContent--inner__newsletter {
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  /* stretchChildrenWidth fixo em 338px para icontext e form */
+  .flexRowContent--inner__newsletter
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    flex: 0 0 338px !important;
+    width: 338px !important;
+  }
+
+  /* icontext: icon + texto lado a lado */
+  .flexCol--icontext__newsletter {
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 16px !important;
+    width: 338px !important;
+    flex: 0 0 338px !important;
+    justify-content: flex-start !important;
+  }
+
+  /* texto: 245px fixo */
+  .flexCol--text__newsletter {
+    width: 245px !important;
+    flex: 0 0 245px !important;
+  }
+
+  /* form: 338px + espaço do texto acima */
+  .flexCol--form__newsletter {
+    width: 338px !important;
+    flex: 0 0 338px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 8px !important;
+  }
+
+}

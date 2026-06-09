@@ -1,0 +1,130 @@
+/* ─────────────────────────────────────────────
+   Pagina 404 — Rich Text
+   ───────────────────────────────────────────── */
+
+/* Titulo "Oh, nao!" */
+.heading--not-found-title {
+  color: #910e4b;
+  font-family: "Istok Web", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  line-height: 1.1;
+}
+
+/* Corpo */
+.paragraph--not-found-body,
+.wrapper--not-found-body {
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  color: #3f3f40;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.list--not-found-body {
+  padding-left: 20px;
+  margin: 12px 0 0;
+}
+
+.listItem--not-found-body {
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+  color: #3f3f40;
+  line-height: 1.7;
+  padding: 2px 0;
+}
+
+/* Link "Ir para pagina inicial" */
+.paragraph--not-found-link {
+  margin: 16px 0 8px;
+}
+
+.paragraph--not-found-link :global(.vtex-rich-text-0-x-link) {
+  display: inline-block;
+  background: #910e4b;
+  color: #ffffff !important;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 200ms ease;
+}
+
+.paragraph--not-found-link :global(.vtex-rich-text-0-x-link):hover {
+  background: #7a0c3f;
+}
+
+/* Bloco "Precisa de ajuda" */
+.paragraph--not-found-help,
+.wrapper--not-found-help {
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+  color: #3f3f40;
+  margin: 24px 0 8px;
+  line-height: 1.5;
+}
+
+/* Link WhatsApp */
+.paragraph--not-found-whatsapp {
+  margin: 0;
+}
+
+.paragraph--not-found-whatsapp :global(.vtex-rich-text-0-x-link) {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1faf38;
+  color: #ffffff !important;
+  font-family: "Istok Web", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 200ms ease;
+}
+
+.paragraph--not-found-whatsapp :global(.vtex-rich-text-0-x-link):hover {
+  background: #18962f;
+}
+
+.paragraph--not-found-whatsapp :global(.vtex-rich-text-0-x-image) {
+  width: 18px;
+  height: 18px;
+}
+
+/* Imagem 404 */
+.wrapper--not-found-image :global(.vtex-rich-text-0-x-image),
+.paragraph--not-found-image :global(.vtex-rich-text-0-x-image) {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet — 768-1023px */
+@media (max-width: 1023px) {
+  .heading--not-found-title {
+    font-size: 40px;
+  }
+}
+
+/* Mobile — 320-767px */
+@media (max-width: 767px) {
+  .heading--not-found-title {
+    font-size: 32px;
+  }
+
+  .paragraph--not-found-body,
+  .wrapper--not-found-body {
+    font-size: 15px;
+  }
+
+  .wrapper--not-found-image :global(.vtex-rich-text-0-x-image),
+  .paragraph--not-found-image :global(.vtex-rich-text-0-x-image) {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
