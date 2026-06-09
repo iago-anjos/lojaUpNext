@@ -13,8 +13,8 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#topbar",
       "flex-layout.row#navbar-main",
+      "flex-layout.row#topbar",
       "flex-layout.row#navbar-menu"
     ]
   },
